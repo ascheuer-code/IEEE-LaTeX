@@ -52,4 +52,14 @@ Microsoft, ``Microsoft standard installer command-line optionen,'' Website,
 J.~Bergner, ``Silent install hq,'' Website, online erhältlich unter
   \url{https://silentinstallhq.com}; abgerufen am \today.
 
+\bibitem{dockerrunnetwork}
+I.~Docker, ``Docker run reference, network settings,'' Website, online
+  erhältlich unter
+  \url{https://docs.docker.com/engine/reference/run/#network-settings};
+  abgerufen am \today.
+
+\bibitem{dockerrstorage}
+------, ``Manage data in docker,'' Website, online erhältlich unter
+  \url{https://docs.docker.com/storage/}; abgerufen am \today.
+
 \end{thebibliography}
