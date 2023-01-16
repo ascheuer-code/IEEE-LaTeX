@@ -1,0 +1,1474 @@
+var contentadmove;
+
+var topbody;
+
+var headerheight;
+
+var savefix = true;
+var savefixmain = true;
+var savesearchfilter = true;
+var savecompanynav = true;
+var savevendorsection = true;
+var scrollnotnull_navi = true;
+var scrollnotnull_fixmain = true;
+var scrollnotnull_searchfilter = true;
+var scrollnotnull_companynav = true;
+var scrollnotnull_vendor = true;
+var no_fixnav = true;
+var no_fixsearchfilter = true;
+var no_fixcompanynav = true;
+var scrollpos_boo = true;
+
+var save_pos_navi;
+var save_pos_fixmain;
+var save_pos_searchfilter;
+var save_pos_companynav;
+var save_pos_vendor;
+var position_navigation;
+var position_fixmain;
+var position_searchfilter;
+var position_companynav;
+var position_vendor;
+var position_vendortext;
+let scrollposition_vendorfixed;
+
+var position_skyfixed;
+var savesky = true;
+var save_pos_sky;
+var no_fix_sky = true;
+var scrollnotnull_skyfixed = true;
+
+var scrollpos_navigation = $(".inf-website").height();
+var scrollpos_fixmain = $(".inf-website").height();
+var scrollpos_searchfilter = $(".inf-website").height();
+var scrollpos_companynav = $(".inf-website").height();
+var scrollpos_vendor = $(".inf-website").height();
+var scrollpos_skyfixed = $(".inf-website").height();
+
+
+var formfieldfilled = false;
+
+$(document).ready(function ()
+{
+
+	headerheight = $('.inf-mainheader').height();
+
+	/* Prüfen ob Inputfield nur Ziffern */
+	function validate(evt) {
+		var theEvent = evt || window.event;
+
+		// Handle paste
+		if (theEvent.type === 'paste') {
+			key = event.clipboardData.getData('text/plain');
+		} else {
+			// Handle key press
+			var key = theEvent.keyCode || theEvent.which;
+			key = String.fromCharCode(key);
+		}
+		var regex = /[0-9]|\./;
+		if (!regex.test(key))
+		{
+			theEvent.returnValue = false;
+			if (theEvent.preventDefault)
+			{
+				theEvent.preventDefault();
+			}
+		}
+	}
+
+
+	$('[id^=registrationcode]').keypress(validate);
+
+
+	/* Bildergalerie - Springt an richtige Stelle, wenn neues Bild geladen */
+	var galleryurl = window.location.href;
+
+	if (galleryurl.search("#gallerydetail") >= 0)
+	{
+
+		var gallerytop = document.querySelector("#inf-gallery-detail").getBoundingClientRect().top;
+		gallerytop = gallerytop - 45;
+
+		// Animate the scroll bar action so its smooth instead of a hard jump
+		$('html, body').stop().animate({
+			'scrollTop' : gallerytop
+		}, 0, 'swing');
+	}
+
+	// Wenn Klasse existiert (Wenn User eingeloggt ist)
+	if ( $("#inf-accountinput").length > 0 ) {
+
+		// Klasse hinzufügen
+		$(".inf-mainheader__top-menu-right").addClass("inf-mainheader__top-menu-right--loggedin");
+
+	} // end if
+
+
+
+
+
+	// Bei Klick auf ein Input Element
+	$('.inf-form-input-text, .inf-form-textarea, .inf-form-select').blur(function()
+	{
+		// Wenn Input Element ist nicht leer
+		if( $(this).val() ) {
+
+			// Klasse hinzufügen
+			$(this).parent().addClass("inf-form-wrapper--filled");
+
+		}
+		else {
+
+			// Klasse entfernen
+			$(this).parent().removeClass("inf-form-wrapper--filled");
+
+		} // end if
+
+	}); // end function
+
+
+	// Bei Klick in Input Element E-Mail
+	$('input[type=email]').blur(function()
+	{
+
+		// Wenn Input Element ist nicht leer
+		if ($(this).val().length > 0)
+		{
+			// Wenn E-Mail nicht valide
+			if (!validateEmail($(this).val()))
+			{
+				// Klasse hinzufügen
+				$(this).parent().addClass("inf-form-wrapper--error-email");
+				$(this).parent().addClass("inf-form-wrapper--error");
+			}
+			else
+			{
+				// Klasse entfernen
+				$(this).parent().removeClass("inf-form-wrapper--error-email");
+				$(this).parent().removeClass("inf-form-wrapper--error");
+			} // end if
+		}
+		else
+		{
+
+			// Durchlaufe die Felder mit folgenden HTML-Klassen
+			$('.inf-form-input-text, .inf-form-textarea, .inf-form-select').each(function ()
+			{
+				// Wenn Feld ausgefült
+				if ($.trim($(this).val()).length != 0)
+				{
+					formfieldfilled = true;
+				}
+			});
+
+			// Wenn Input Element required
+			if ($(this).prop('required') && formfieldfilled)
+			{
+				// Klasse hinzufügen
+				$(this).parent().addClass("inf-form-wrapper--error-email");
+				$(this).parent().addClass("inf-form-wrapper--error");
+			}
+			else
+			{
+				// Klasse entfernen
+				$(this).parent().removeClass("inf-form-wrapper--error-email");
+				$(this).parent().removeClass("inf-form-wrapper--error");
+			} // end if
+		} // end if
+
+	}); // end function
+
+
+	// Bei Klick in Input Element URL
+	$('input[type=url]').blur(function()
+	{
+
+		// Wenn Input Element nicht leer
+		if ($(this).val().length > 0)
+		{
+			// Wenn URL nicht valide
+			if (!validateURL($(this).val()))
+			{
+				// Klasse hinzufügen
+				$(this).parent().addClass("inf-form-wrapper--error-url");
+				$(this).parent().addClass("inf-form-wrapper--error");
+			}
+			else
+			{
+				// Klasse entfernen
+				$(this).parent().removeClass("inf-form-wrapper--error-url");
+				$(this).parent().removeClass("inf-form-wrapper--error");
+			} // end if
+		}
+		else
+		{
+
+			// Durchlaufe die Felder mit folgenden HTML-Klassen
+			$('.inf-form-input-text, .inf-form-textarea, .inf-form-select').each(function ()
+			{
+				// Wenn Feld ausgefült
+				if ($.trim($(this).val()).length != 0)
+				{
+					formfieldfilled = true;
+				}
+			});
+
+			// Wenn Input Element ist required
+			if ($(this).prop('required') && formfieldfilled)
+			{
+				// Klasse hinzufügen
+				$(this).parent().addClass("inf-form-wrapper--error-url");
+				$(this).parent().addClass("inf-form-wrapper--error");
+			}
+			else
+			{
+				// Klasse entfernen
+				$(this).parent().removeClass("inf-form-wrapper--error-url");
+				$(this).parent().removeClass("inf-form-wrapper--error");
+
+			} // end if
+
+		} // end if
+
+	}); // end function
+
+
+	// Beim Verlassen des Inputfelder wird Funktion ausgeführt
+	$('input[type=tel]').blur(function()
+	{
+
+		// Wenn Feld ausgefüllt ist
+		if ($(this).val().length > 0)
+		{
+			// Wenn Phone nicht gültig ist
+			if (!validatePhone($(this).val()))
+			{
+				// Klasse hinzufügen
+				$(this).parent().addClass("inf-form-wrapper--error-phone");
+				$(this).parent().addClass("inf-form-wrapper--error");
+			}
+			else
+			{
+				// Klasse entfernen
+				$(this).parent().removeClass("inf-form-wrapper--error-phone");
+				$(this).parent().removeClass("inf-form-wrapper--error");
+
+			} // end if
+
+		}
+		else
+		{
+
+			// Durchlaufe die Felder mit folgenden HTML-Klassen
+			$('.inf-form-input-text, .inf-form-textarea, .inf-form-select').each(function ()
+			{
+				// Wenn Feld ausgefült
+				if ($.trim($(this).val()).length != 0)
+				{
+					formfieldfilled = true;
+				}
+			});
+
+			// Wenn Feld required ist
+			if ($(this).prop('required') && formfieldfilled)
+			{
+				// Klasse hinzufügen
+				$(this).parent().addClass("inf-form-wrapper--error-phone");
+				$(this).parent().addClass("inf-form-wrapper--error");
+			}
+			else
+			{
+				// Klasse entfernen
+				$(this).parent().removeClass("inf-form-wrapper--error-phone");
+				$(this).parent().removeClass("inf-form-wrapper--error");
+
+			} // end if
+
+		} // end if
+
+	}); // end function
+
+
+
+
+	// Beim Verlassen der Inputfelder wird Funktion ausgeführt
+	$('input[type=password], input[type=text], select, input[type=radio], input[type=number], input[type=checkbox], textarea').blur(function()
+	{
+
+		// Durchlaufe die Felder mit folgenden HTML-Klassen
+		$('.inf-form-input-text, .inf-form-textarea, .inf-form-select').each(function ()
+		{
+			// Wenn Feld ausgefült
+			if ($.trim($(this).val()).length != 0)
+			{
+				formfieldfilled = true;
+			}
+		});
+
+		// Nur Required Felder berücksichtigen
+		if($(this).prop('required') && formfieldfilled)
+		{
+
+			// Wenn Feld leer ist
+			if (!$(this).val().length > 0)
+			{
+				// Klasse hinzufügen
+				$(this).parent().addClass("inf-form-wrapper--error-text");
+				$(this).parent().addClass("inf-form-wrapper--error");
+			}
+			else
+			{
+				// Klasse entfernen, wenn Feld nicht leer
+				$(this).parent().removeClass("inf-form-wrapper--error-text");
+				$(this).parent().removeClass("inf-form-wrapper--error");
+
+			} // end if
+
+		} // end if
+
+	}); // end function
+
+
+	// Required Felder prüfen nach dem User Ext.-Reg. abschließen will
+	$("#registration-extended__submit, #myprofile_submit").click(function ()
+	{
+
+		// Durchlaufe die Felder mit folgenden HTML-Klassen
+		$('.inf-form-input-text, .inf-form-textarea, .inf-form-select').each(function ()
+		{
+
+			// Nur Required Felder berücksichtigen
+			if ($(this).prop('required'))
+			{
+
+				// Wenn Feld leer ist
+				if ($.trim($(this).val()).length === 0)
+				{
+
+					// Klasse hinzufügen (Markiert Input-Feld rot)
+					$(this).parent().addClass("inf-form-wrapper--error-text");
+					$(this).parent().addClass("inf-form-wrapper--error");
+				}
+				else
+				{
+
+					// Klasse entfernen wenn Feld nicht leer ist
+					$(this).parent().removeClass("inf-form-wrapper--error-text");
+					$(this).parent().removeClass("inf-form-wrapper--error");
+
+				} // end if
+
+			} // end if
+
+		}); // end function
+
+	}); // end function
+
+
+
+	// Beim Klick in Inputfelder wird Funktion ausgeführt
+	$('input,select, textarea').focus(function ()
+	{
+		// Entferne Klasse
+		$(this).parent().removeClass("inf-form-wrapper--error");
+
+		// Beim Drücken der Tastatur im Inputfeld wird Funktion ausgeführt
+		$(this).keypress(function(event){
+
+			// Tastatureingabe wird in Variable gespeichert
+			var keycode = (event.keyCode ? event.keyCode : event.which);
+
+			// Wenn Variable ausgefüllt ist
+			if(keycode != ''){
+
+				// Entferne die Klassen
+				$(this).parent().removeClass("inf-form-wrapper--error-text");
+				$(this).parent().removeClass("inf-form-wrapper--error-phone");
+				$(this).parent().removeClass("inf-form-wrapper--error-url");
+				$(this).parent().removeClass("inf-form-wrapper--error-email");
+			} // end if
+
+			// Ausbreitung auf Umliegendes verhindern
+			event.stopPropagation();
+
+		}); // end function
+
+	}); // end function
+
+
+
+	// Beim Klick auf Select wird Funktion ausgeführt
+	$('select').focus(function ()
+	{
+		// Wenn Wert des Select-Felds verändert wird
+		$(this).change(function(){
+			// Entferne Klasse
+			$(this).parent().removeClass("inf-form-wrapper--error-text");
+		}); // end function
+
+	}); // end function
+
+	if ($("#registrationcode").length > 0 )
+	{
+		$('#registrationcode').focus();
+		// Bei Eingabe des Regcode von 4 Zeichen, wird das Formular abgeschickt
+		$('#registrationcode').on("keyup", function (key)
+		{
+			let length = $(this).val().length;
+			if (length >= 4)
+			{
+				$("#inf-registrationcode").submit();
+				$(".inf-spinner").css("display", "block");
+
+				$("#inf-registrationcode").attr("onSubmit", "return false");
+
+			}
+		});
+	}
+
+
+
+
+
+	// Prüfung ob E-Mailadresse valide
+	function validateEmail($email) {
+		var emailReg = /^([\w-+\.]+@([\w-]+\.)+[\w-]{2,8})?$/;
+		return emailReg.test( $email );
+	}
+
+	// Prüfung ob Telefonnummer valide
+	function validatePhone($phone) {
+		var PhoneReg = /^[+]*[(\s]{0,1}[0-9]{1,4}[)\s]{0,1}[(\s]{0,1}[0-9]{1,4}[)\s]{0,1}[-\s\./0-9]*$/;
+		return PhoneReg.test( $phone );
+	}
+
+	// Prüfung ob URL valide
+	function validateURL($url) {
+		return /^(https?|s?ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i.test($url);
+	}
+
+
+	// Prüfe jedes Input Element
+	$('.inf-form-input-text, .inf-form-textarea, .inf-form-select').each(function() {
+		var el=$(this);
+		// Wenn Element ausgefüllt ist
+		if (el.val() != null) {
+			if (el.val().length > 0) {
+
+				// Klasse hinzufügen
+				el.parent().addClass("inf-form-wrapper--filled");
+			} // end if
+		} // end if
+	}); // end function
+
+
+	// Bei Hover auf MySite Menu
+	$('.inf-account-header').hoverIntent({
+		sensitivity: 150, // number = sensitivity threshold (must be 1 or higher)
+		interval: 150,  // number = milliseconds for onMouseOver polling interval
+		timeout: 300,   // number = milliseconds delay before onMouseOut
+
+		// Hover Over
+		over: function ()
+		{
+			// Finde Subnavigation Element
+			$(this).find('.inf-account-header__subnav')
+
+				// Display auf flex setzen und einfaden 200ms
+				   .fadeIn(200).css("display", "flex");
+		},
+		// Hover Out
+		out: function ()
+		{
+			// Finde Subnavigation Element
+			$(this).find('.inf-account-header__subnav')
+				// Element ausfaden
+				   .fadeOut(200);
+		}
+	});
+
+
+
+
+	// Bei Hover auf Main-Nav Element
+	$('.inf-mainnav__item').hoverIntent({
+		sensitivity: 150, // number = sensitivity threshold (must be 1 or higher)
+		interval: 150,  // number = milliseconds for onMouseOver polling interval
+		timeout: 300,   // number = milliseconds delay before onMouseOut
+
+		// Hover Over
+		over: function ()
+		{
+			// Finde Subnavigation Element
+			$(this).find('.inf-subnav')
+
+			       // Display auf flex setzen und einfaden 200ms
+			       .fadeIn(200).css("display", "flex");
+		},
+		// Hover Out
+		out: function ()
+		{
+			// Finde Subnavigation Element
+			$(this).find('.inf-subnav')
+				// Element ausfaden
+			       .fadeOut(200);
+		}
+	});
+
+
+	// Popover auf Aboseite
+	$('.inf-abo__question').hoverIntent({
+		sensitivity: 150, // number = sensitivity threshold (must be 1 or higher)
+		interval: 150,  // number = milliseconds for onMouseOver polling interval
+		timeout: 300,   // number = milliseconds delay before onMouseOut
+		over: function ()
+		{
+			$(this).parent().parent().find('.inf-abo__popover')
+			       .fadeIn(200).css("display", "flex");
+		},
+		out: function ()
+		{
+			$(this).parent().parent().find('.inf-abo__popover')
+			       .fadeOut(200);
+		}
+	});
+
+
+
+
+
+	var count = 0;
+	var menuout = false;
+	var mysiteout = false;
+
+	function hamburgerclick ()
+	{
+		if (mysiteout)
+		{
+			mysiteclick();
+		}
+
+		$('.inf-mobile-menu').toggleClass("inf-mobile-menu--open");
+		$('.inf-mobile-menu-mask').toggleClass("inf-mobile-menu-mask--fade");
+
+
+		count++;
+		var isEven = function(someNumber) {
+			return (someNumber % 2 === 0) ? true : false;
+		};
+		if (isEven(count) === false) {
+
+			topbody = window.pageYOffset;
+
+			document.body.style.overflow = "hidden";
+			document.body.style.position = "fixed";
+			document.body.style.height = "100vh";
+			document.body.style.top = "-" + topbody + "px";
+			document.body.style.width = "100%";
+
+			menuout = true;
+
+		} else if (isEven(count) === true) {
+
+			document.body.style.overflow = "auto";
+			document.body.style.height = "auto";
+			document.body.style.position = "static";
+			document.body.style.top = "0";
+			document.body.style.width = "100%";
+
+			window.scrollTo(0, topbody);
+
+			menuout = false;
+		}
+
+	}
+
+	// Funktion Mysite Menu Tablet/Phone
+	function mysiteclick ()
+	{
+		// Wenn Hauptnavi geöffnet
+		if (menuout)
+		{
+			hamburgerclick();
+		}
+
+		// Ändere Klasse Öffnen/Schließen MySite-Menu
+		$('.inf-accountheader__subnav').toggleClass('inf-accountheader__subnav--active');
+
+		// Ändere Klasse Black Mask
+		$('.inf-mobile-menu-mask').toggleClass("inf-mobile-menu-mask--fade");
+
+
+
+		count++;
+		var isEven = function(someNumber) {
+			return (someNumber % 2 === 0) ? true : false;
+		};
+		if (isEven(count) === false) {
+
+			topbody = window.pageYOffset;
+
+			document.body.style.overflow = "hidden";
+			document.body.style.position = "fixed";
+			document.body.style.height = "100vh";
+			document.body.style.top = "-" + topbody + "px";
+			document.body.style.width = "100%";
+
+			mysiteout = true;
+
+		} else if (isEven(count) === true) {
+
+			document.body.style.overflow = "auto";
+			document.body.style.height = "auto";
+			document.body.style.position = "static";
+			document.body.style.top = "0";
+			document.body.style.width = "100%";
+
+			window.scrollTo(0, topbody);
+
+			mysiteout = false;
+		}
+
+	}
+
+	// Klick auf Search-Icon öffnet Suche
+	function searchclick ()
+	{
+
+		$('.inf-search-header').toggleClass("inf-search-header--open");
+
+		if ($('.inf-search-header').hasClass("inf-search-header--open"))
+		{
+
+			$('.inf-search-header').css("width", "240px");
+			$('.inf-search-header__form').css("display", "block").css("opacity", "1");
+			$('.inf-search-header__icon').css("display", "none");
+			$('#search_input_header').focus();
+
+		}
+		else
+		{
+			$('.inf-search-header').animate({
+				width: '30px'
+			}, 100);
+
+			setTimeout(function ()
+			{
+				$('.inf-search-header__form').css("display", "none").css("opacity", "0");
+				$('.inf-search-header__icon').css("display", "block");
+			}, 400);
+
+		}
+	}
+
+	// Wenn Suchbutton existiert
+	if ( $("#search_submit").length > 0 ) {
+
+		// Beim zweiten Klick auf Lupe in Header
+		document.getElementById('search_submit').onsubmit = function (evt)
+		{
+
+			// Wert von Inputfeld speichern
+			let input = document.getElementById('search_input_header').value;
+
+			// Wenn Suchschlitz leer
+			if (!input.length > 0)
+			{
+
+				// Schließe Suchfunktion
+				searchclick();
+
+				// Abbrechen der Suche
+				evt.preventDefault();
+
+			} // end if
+
+		} // end function
+
+
+		// Bei Klick auf Body/ESC close Suchfeld od. Accountinfo
+		$('body').click(function (e)
+		{
+			var target = $(e.target);
+
+			if ((!target.closest('.inf-search-header').length) && ($('.inf-search-header').hasClass("inf-search-header--open")))
+			{
+				searchclick()
+			}
+
+
+		});
+		$(document).on('keyup', function (evt)
+		{
+			// Wert von Inputfeld speichern
+			let input = document.getElementById('search_input_header').value;
+
+			if (evt.keyCode == 27 && !input.length > 0 && ($('.inf-search-header').hasClass("inf-search-header--open")))
+			{
+					searchclick()
+
+			} // end if
+		});
+
+
+	} // end if
+
+
+
+		// Klick auf Hamburger-Menu
+		$(document).on("click", ".inf-mainheader__menu-icon", hamburgerclick);
+
+		// Klick auf Fläche bei offenen Menü
+
+		$(".inf-mobile-menu-mask").click(function ()
+		{
+			if (menuout)
+			{
+				hamburgerclick();
+			}
+			if (mysiteout)
+			{
+				mysiteclick();
+			}
+		});
+
+		// Klick auf Lupe
+		$(document).on("click", "#inf-searchinput", searchclick);
+
+
+		// Klick auf MySite-Icon nur bei Tablet/Phone
+		if (window.matchMedia('(max-width:900px)').matches)
+		{
+			$(document).on("click", ".inf-account-header", mysiteclick);
+		}
+
+
+		// Klick auf Menupunkt mit Pfeil
+		$(".inf-mobile-menu__item--arrow").click(function ()
+		{
+			$(this).toggleClass("inf-mobile-menu__item--open");
+		});
+
+
+		// Klick auf Mehr bei Firmen
+		$(".inf-companies-rel__link").click(function ()
+		{
+			$('.inf-companies-rel-flyout').toggleClass('inf-companies-rel-flyout--open');
+			$('.inf-companies-rel__content').toggleClass('inf-companies-rel__content--open');
+		});
+
+
+		// Click auf Auge
+		$(".inf-icon--eye").click(function ()
+		{
+
+			// Icon tauschen
+			$(this).toggleClass("inf-icon--eye").toggleClass("inf-icon--eye-disabled");
+
+			// Input-Feld
+			var OBJ_input = $(this).parent().find("input");
+			OBJ_input.attr("type", (OBJ_input.attr("type") === "password") ? "text" : "password");
+
+		});
+
+
+		// Upload Formbuilder
+
+		var inputs = document.querySelectorAll('.inf-form-upload');
+		Array.prototype.forEach.call(inputs, function (input)
+		{
+			var label = input.nextElementSibling,
+				labelVal = label.innerHTML;
+
+			input.addEventListener('change', function (e)
+			{
+				var fileName = '';
+				if (this.files && this.files.length > 1)
+					fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+				else
+					fileName = e.target.value.split('\\').pop();
+
+				if (fileName)
+					label.querySelector('span').innerHTML = fileName;
+				else
+					label.innerHTML = labelVal;
+			});
+		});
+
+
+		//Passwort Validation
+		var password = "";
+		let hasEightChars = false;
+		let hasLowerCase = false;
+		let hasUpperCase = false;
+		let hasNumber = false;
+		let hasSpecialChar = false;
+
+		$("#password").keyup(function ()
+		{
+			password = $(this).val();
+
+			$(".inf-password-requirements").css('display', 'flex');
+
+			hasEightChars = password.length >= 8;
+			hasLowerCase = password.match(/[a-z]/);
+			hasUpperCase = password.match(/[A-Z]/);
+			hasNumber = password.match(/\d/);
+			hasSpecialChar = password.match(/[!?$%^&*(){}[\]<>\/|\-=+~_.,;:]|[0-9]/);
+
+			//validate the length
+			if (hasEightChars)
+			{
+				$('.inf-passwordhint-icon--8-chars').removeClass('inf-circle').removeClass('inf-icon--close-circled').addClass('inf-icon--checkmark-circled');
+				$('#password').removeClass('inf-form-input-text--error');
+			}
+			else
+			{
+				$('.inf-passwordhint-icon--8-chars').removeClass('inf-icon--checkmark-circled').removeClass('inf-icon--close-circled').addClass('inf-circle');
+			}
+
+			//validate lower case
+			if (hasLowerCase)
+			{
+				$('.inf-passwordhint-icon--lower-case').addClass('inf-icon--checkmark-circled').removeClass('inf-circle').removeClass('inf-icon--close-circled');
+				$('#password').removeClass('inf-form-input-text--error');
+			}
+			else
+			{
+				$('.inf-passwordhint-icon--lower-case').addClass('inf-circle').removeClass('inf-icon--checkmark-circled').removeClass('inf-icon--close-circled');
+			}
+
+			//validate upper case
+			if (hasUpperCase)
+			{
+				$('.inf-passwordhint-icon--upper-case').addClass('inf-icon--checkmark-circled').removeClass('inf-circle').removeClass('inf-icon--close-circled');
+				$('#password').removeClass('inf-form-input-text--error');
+			}
+			else
+			{
+				$('.inf-passwordhint-icon--upper-case').addClass('inf-circle').removeClass('inf-icon--checkmark-circled').removeClass('inf-icon--close-circled');
+			}
+
+			//validate number or special char
+			if (hasNumber || hasSpecialChar)
+			{
+				$('.inf-passwordhint-icon--special-char').addClass('inf-icon--checkmark-circled').removeClass('inf-circle').removeClass('inf-icon--close-circled');
+				$('#password').removeClass('inf-form-input-text--error');
+			}
+			else
+			{
+				$('.inf-passwordhint-icon--special-char').addClass('inf-circle').removeClass('inf-icon--checkmark-circled').removeClass('inf-icon--close-circled');
+			}
+		});
+
+		$("#password").blur(function ()
+		{
+			if ($(this).val())
+			{                      //if it is blank.
+
+				if (!hasEightChars)
+				{
+					$('.inf-passwordhint-icon--8-chars').addClass('inf-icon--close-circled').removeClass('inf-icon--checkmark-circled').removeClass('inf-circle');
+					$('#password').addClass('inf-form-input-text--error');
+				}
+				if (!hasLowerCase)
+				{
+					$('.inf-passwordhint-icon--lower-case').addClass('inf-icon--close-circled').removeClass('inf-icon--checkmark-circled').removeClass('inf-circle');
+					$('#password').addClass('inf-form-input-text--error');
+				}
+				if (!hasUpperCase)
+				{
+					$('.inf-passwordhint-icon--upper-case').addClass('inf-icon--close-circled').removeClass('inf-icon--checkmark-circled').removeClass('inf-circle');
+					$('#password').addClass('inf-form-input-text--error');
+				}
+				if (!(hasNumber || hasSpecialChar))
+				{
+					$('.inf-passwordhint-icon--special-char').addClass('inf-icon--close-circled').removeClass('inf-icon--checkmark-circled').removeClass('inf-circle');
+					$('#password').addClass('inf-form-input-text--error');
+				}
+			}
+		});
+	});
+
+// Webinar, bei Klick auf Bild scrollt zu Anmeldebox
+
+
+if ($(window).width() < 654)
+{
+	if ($(".inf-webinarheader").length) {
+
+		$(".inf-webinarheader").click(function () {
+
+			var x = document.getElementsByClassName("inf-form-loginwrapper");
+			console.log(x);
+			var webinarform = x[0].getBoundingClientRect().top;
+			console.log(x[0].getBoundingClientRect().top);
+			webinarform = webinarform - 50;
+
+
+			// Animate the scroll bar action so its smooth instead of a hard jump
+			$('html, body').stop().animate({
+				'scrollTop' : webinarform
+			}, 500, 'swing');
+		});
+	}
+}
+if ($(window).width() > 654)
+{
+	if ($(".inf-webinarheader").length) {
+
+		$(".inf-webinarheader").click(function () {
+
+			var x = document.getElementsByClassName("inf-vendorsection");
+			console.log(x);
+			var webinarform = x[0].getBoundingClientRect().top;
+			console.log(x[0].getBoundingClientRect().top);
+			webinarform = webinarform - 50;
+
+
+			// Animate the scroll bar action so its smooth instead of a hard jump
+			$('html, body').stop().animate({
+				'scrollTop' : webinarform
+			}, 500, 'swing');
+		});
+	}
+}
+
+
+
+
+// RegForm, NL-Form, Download, Webinar bei Klick auf Dropdown
+$(".inf-form-dropdown").click(function () {
+
+	$(".inf-form-rights").toggle();
+	$(this).toggleClass("inf-form-dropdown--rotate");
+});
+
+
+
+if ($(window).width() > 654 && $(window).width() < 900)
+{
+
+	window.onscroll = function ()
+	{
+
+		// JavaScrip Fixed Searchfilter
+
+
+		if ($('.inf-dropdown-filter').length)
+		{
+			position_searchfilter = document.querySelector(".inf-dropdown-filter").getBoundingClientRect().top;
+
+
+			if (savesearchfilter)
+			{
+				save_pos_searchfilter = position_searchfilter;
+				savesearchfilter = false;
+			}
+
+			if (save_pos_searchfilter > 0)
+			{
+
+				if ((position_searchfilter <= ($('.inf-mainheader').height())) && !(no_fixnav) && no_fixsearchfilter)
+				{
+					scrollpos_searchfilter = window.pageYOffset;
+					$('.inf-dropdown-filter').addClass('inf-dropdown-filter--fixed');
+					no_fixsearchfilter = false;
+				}
+				else if (window.pageYOffset < scrollpos_searchfilter)
+				{
+					$('.inf-dropdown-filter').removeClass('inf-dropdown-filter--fixed');
+					no_fixsearchfilter = true;
+				}
+			}
+			else
+			{
+				if (scrollnotnull_searchfilter)
+				{
+					scrollpos_searchfilter = window.pageYOffset + save_pos_searchfilter;
+					scrollnotnull_searchfilter = false;
+				}
+
+				if (window.pageYOffset >= scrollpos_searchfilter)
+				{
+					$('.inf-dropdown-filter').addClass('inf-dropdown-filter--fixed');
+				}
+				else
+				{
+					$('.inf-dropdown-filter').removeClass('inf-dropdown-filter--fixed');
+				}
+			}
+		}
+
+
+		}
+
+}
+
+
+// Tablet
+if ($(window).width() > 900)
+{
+
+
+	window.onscroll = function ()
+	{
+
+		// Javascript Fixedheader
+		if (window.XMLHttpRequest)
+		{
+
+			if ($('.inf-mainnav').length)
+			{
+				position_navigation = document.querySelector("ul.inf-mainnav").getBoundingClientRect().top;
+
+				if (savefix)
+				{
+					save_pos_navi = position_navigation;
+					savefix = false;
+				}
+
+
+				if (save_pos_navi > 0)
+				{
+					if (position_navigation <= 0 && no_fixnav)
+					{
+						$('.inf-wrapper').addClass('inf-fixheader');
+						document.getElementById("mainwrapper").style.marginTop = headerheight + 'px';
+						scrollpos_navigation = window.pageYOffset;
+						if ($('.fixed').length){
+							$('.fixed').css('margin-top', '40px');
+						}
+						no_fixnav = false;
+					}
+
+					else if ((window.pageYOffset < scrollpos_navigation))
+					{
+						$('.inf-wrapper').removeClass('inf-fixheader');
+						document.getElementById("mainwrapper").style.marginTop = '0px';
+						scrollpos_navigation = $(".inf-website").height();
+						if ($('.fixed').length){
+							$('.fixed').css('margin-top', '0px');
+						}
+						no_fixnav = true;
+					}
+				}
+				else
+				{
+
+					if (scrollnotnull_navi)
+					{
+						scrollpos_navigation = window.pageYOffset + save_pos_navi;
+						scrollnotnull_navi = false;
+					}
+					if (window.pageYOffset >= scrollpos_navigation)
+					{
+						$('.inf-wrapper').addClass('inf-fixheader');
+						document.getElementById("mainwrapper").style.marginTop = headerheight + 'px';
+						if ($('.fixed').length){
+							$('.fixed').css('margin-top', '40px');
+						}
+						no_fixnav = false;
+					}
+					else
+					{
+						$('.inf-wrapper').removeClass('inf-fixheader');
+						document.getElementById("mainwrapper").style.marginTop = '0px';
+						if ($('.fixed').length){
+							$('.fixed').css('margin-top', '0px');
+						}
+						no_fixnav = true;
+					}
+				}
+			}
+
+
+			// Javascript Fixed Companies + SocialMedia
+
+			if ($('.inf-main-detail').length)
+			{
+
+				position_fixmain = document.querySelector(".inf-main-detail").getBoundingClientRect().top;
+
+
+				if (savefixmain)
+				{
+					save_pos_fixmain = position_fixmain;
+					savefixmain = false;
+				}
+
+
+
+				if (save_pos_fixmain > 0)
+				{
+					if ((position_fixmain <= ($('.inf-mainheader').height() + 45)) && !no_fixnav)
+					{
+						scrollpos_fixmain = window.pageYOffset;
+						$('.inf-main-detail').addClass('inf-fixmain');
+					}
+					else if (window.pageYOffset < scrollpos_fixmain)
+					{
+						$('.inf-main-detail').removeClass('inf-fixmain');
+					}
+				}
+				else
+				{
+					if (scrollnotnull_fixmain)
+					{
+						scrollpos_fixmain = window.pageYOffset + save_pos_fixmain;
+						scrollnotnull_fixmain = false;
+					}
+
+					if (window.pageYOffset >= scrollpos_fixmain)
+					{
+						$('.inf-main-detail').addClass('inf-fixmain');
+					}
+					else
+					{
+						$('.inf-main-detail').removeClass('inf-fixmain');
+					}
+
+				}
+			}
+
+			// Javascript Fixed Sky Second Position
+
+			if ($('.sky_fixed').length)
+			{
+				position_skyfixed = document.querySelector(".sky_fixed").getBoundingClientRect().top;
+
+
+				if (savesky)
+				{
+					save_pos_sky = position_skyfixed;
+					savesky = false;
+
+				}
+
+
+				if (save_pos_sky > 0)
+				{
+
+
+					if ((position_skyfixed <= ($('.inf-mainheader').height())) && !(no_fixnav) && no_fix_sky)
+					{
+						scrollpos_skyfixed = window.pageYOffset;
+						$('.sky_fixed').addClass('sky_fixed--fixed');
+						no_fix_sky = false;
+
+
+					}
+					else if (window.pageYOffset < scrollpos_skyfixed)
+					{
+						$('.sky_fixed').removeClass('sky_fixed--fixed');
+						no_fix_sky = true;
+					}
+				}
+				else
+				{
+					if (scrollnotnull_skyfixed)
+					{
+						scrollpos_skyfixed = window.pageYOffset + save_pos_sky;
+						scrollnotnull_skyfixed = false;
+					}
+
+					if (window.pageYOffset >= scrollpos_skyfixed)
+					{
+						$('.sky_fixed').addClass('sky_fixed--fixed');
+
+					}
+					else
+					{
+						$('.sky_fixed').removeClass('sky_fixed--fixed');
+					}
+				}
+			}
+
+
+
+			// Javascript Fixed Searchfilter
+
+			if ($('.inf-dropdown-filter').length)
+			{
+				position_searchfilter = document.querySelector(".inf-dropdown-filter").getBoundingClientRect().top;
+
+
+
+				if (savesearchfilter)
+				{
+					save_pos_searchfilter = position_searchfilter;
+					savesearchfilter = false;
+
+				}
+
+
+
+				if (save_pos_searchfilter > 0)
+				{
+
+
+
+					if ((position_searchfilter <= ($('.inf-mainheader').height())) && !(no_fixnav) && no_fixsearchfilter)
+					{
+						scrollpos_searchfilter = window.pageYOffset;
+						$('.inf-dropdown-filter').addClass('inf-dropdown-filter--fixed');
+						no_fixsearchfilter = false;
+
+
+					}
+					else if (window.pageYOffset < scrollpos_searchfilter)
+					{
+						$('.inf-dropdown-filter').removeClass('inf-dropdown-filter--fixed');
+						no_fixsearchfilter = true;
+					}
+				}
+				else
+				{
+					if (scrollnotnull_searchfilter)
+					{
+						scrollpos_searchfilter = window.pageYOffset + save_pos_searchfilter;
+						scrollnotnull_searchfilter = false;
+					}
+
+					if (window.pageYOffset >= scrollpos_searchfilter)
+					{
+						$('.inf-dropdown-filter').addClass('inf-dropdown-filter--fixed');
+
+					}
+					else
+					{
+						$('.inf-dropdown-filter').removeClass('inf-dropdown-filter--fixed');
+					}
+				}
+			}
+
+
+			// Javascript Fixed Vendorsection
+
+			// Wenn Vendorsection Fixed existiert (Pruefe bei jedem scrollen!)
+			if (($(".inf-vendorsection__fixed").length) && !($(".inf-vendorsection--fullwidth").length))
+			{
+				// Position von Reg/Login/Button auslesen bei jedem scrollen
+				position_vendor = document.querySelector(".inf-vendorsection__fixed").getBoundingClientRect().top;
+
+				// Pruefen ob Position sicher gespeichert wurde
+				if (savevendorsection)
+				{
+					// Speicher Position von Reg/Login/Button sicher
+					save_pos_vendor = position_vendor;
+
+					// Setze Boolean auf false
+					savevendorsection = false;
+				}
+
+				position_vendortext = document.querySelector("div[data-infinity-id='vendorinfo-provider']").getBoundingClientRect().bottom;
+
+
+				// Pruefen ob Original-Position von Reg/Login/Button im sichtbaren Bereich oder drüber liegt
+				if (save_pos_vendor > 0)
+				{
+					console.log($('.inf-mainheader').height());
+					console.log(position_vendor);
+					// Pruefen ob aktuelle Position von Reg/Login/Button kleiner oder gleich der Höhe des Headers ist
+					if ((position_vendor <= ($('.inf-mainheader').height()) + 23) && (position_vendortext > $(window).height()))
+					{
+
+						if (scrollnotnull_vendor)
+						{
+							scrollpos_vendor = window.pageYOffset;
+							scrollnotnull_vendor = false;
+						}
+
+						$('.inf-vendorsection__fixed').addClass('inf-vendorsection__fixed--active');
+						$('.inf-vendorsection__fixed').css('padding-top', 'inherit');
+						scrollpos_boo = true;
+					}
+					else if ((window.pageYOffset < scrollpos_vendor) || (position_vendortext <= $(window).height()))
+					{
+
+						$('.inf-vendorsection__fixed').removeClass('inf-vendorsection__fixed--active');
+
+						if ((position_vendortext <= $(window).height()))
+						{
+							if (scrollpos_boo) {
+								scrollposition_vendorfixed = window.pageYOffset;
+								scrollpos_boo = false;
+							}
+
+							if ($(".inf-vendorsection__figure").length) {
+
+								$('.inf-vendorsection__fixed').css('padding-top', (scrollposition_vendorfixed - $('.inf-mainheader').height() - $('.inf-vendorsection__figure').height() + 23));
+							}
+							else if ($(".inf-webinarheader").length) {
+								$('.inf-vendorsection__fixed').css('padding-top', (scrollposition_vendorfixed - $('.inf-mainheader').height() - $('.inf-webinarheader').height() - 27 - 27 - headerheight));
+							}
+							else {
+								$('.inf-vendorsection__fixed').css('padding-top', (scrollposition_vendorfixed - $('.inf-mainheader').height() + 23));
+							}
+
+						}
+
+					}
+				}
+				else
+				{
+					if (scrollnotnull_vendor)
+					{
+						scrollpos_vendor = window.pageYOffset + save_pos_vendor;
+						scrollnotnull_vendor = false;
+					}
+
+					if ((window.pageYOffset >= scrollpos_vendor) && (position_vendortext > $(window).height()))
+					{
+						$('.inf-vendorsection__fixed').addClass('inf-vendorsection__fixed--active');
+						$('.inf-vendorsection__fixed').css('padding-top', 'inherit');
+						scrollpos_boo = true;
+					}
+					else if ((window.pageYOffset < scrollpos_vendor) || (position_vendortext <= $(window).height()))
+					{
+						$('.inf-vendorsection__fixed').removeClass('inf-vendorsection__fixed--active');
+
+						if ((position_vendortext <= $(window).height()))
+						{
+							if (scrollpos_boo) {
+								scrollposition_vendorfixed = window.pageYOffset;
+								scrollpos_boo = false;
+							}
+
+							if ($(".inf-vendorsection__figure").length) {
+
+								$('.inf-vendorsection__fixed').css('padding-top', (scrollposition_vendorfixed - $('.inf-mainheader').height() - $('.inf-vendorsection__figure').height() + 23));
+							}
+							else if ($(".inf-webinarheader").length) {
+								$('.inf-vendorsection__fixed').css('padding-top', (scrollposition_vendorfixed - $('.inf-mainheader').height() - $('.inf-webinarheader').height() - 27 - 27 - headerheight));
+							}
+							else {
+								$('.inf-vendorsection__fixed').css('padding-top', (scrollposition_vendorfixed - $('.inf-mainheader').height() + 23));
+							}
+						}
+					}
+				}
+
+			}
+	}
+}
+
+
+// Content Ad Korrektur für Smartphones
+$(document).ready(function ()
+{
+	if ($(window).width() < 340)
+	{
+		if (window.XMLHttpRequest)
+		{
+			contentadmove = ((340 - $(window).width()) * (-0.5));
+			$('.inf-section-wrapper__advertising').css('left', contentadmove);
+			$('.inf-section-wrapper__advertising').css('position', 'relative');
+		}
+	}
+});
+
+// Footer im Artikel, wenn SM-Leiste da
+if ($(window).width() < 900)
+{
+	$(document).ready(function ()
+	{
+
+		if (window.XMLHttpRequest)
+		{
+			if (($('.inf-toolbar').length))
+			{
+				$('.inf-footer').css('margin-bottom', '50px');
+			}
+		}
+	});
+}
+
+// Fitvid for Embedded Vids in iFrame (youtube, vimeo)
+$(document).ready(function ()
+{
+	// Target your .container, .wrapper, .post, etc.
+	$(".inf-html-snip iframe, .inf-html-video iframe").each(function (index, element)
+	{
+		$(element).parent().fitVids();
+	});
+
+	// Href von allen Links über Bildern leeren, damit sich Bildoverlay öffnet
+	$('a.inf-img-overlay-click').attr('href', 'javascript:void(0)');
+
+});
+
+
+// Responsive iFrames
+var ri = responsiveIframe();
+ri.allowResponsiveEmbedding();
+
+(function ($)
+{
+	$(function ()
+	{
+		$('#inf-jobware-iframe').responsiveIframe({xdomain: '*'});
+	});
+})(jQuery);}
+
+
+// Öffnen des Bild-Overlays bei Klick auf Bild
+$('.inf-img-overlay-click').click(function ()
+	{
+
+		if (!$('.inf-img-overlay').hasClass("inf-img-overlay--active"))
+		{
+
+			// Bildquelle aus DOM ziehen, falls kein passendes Attribut vorhanden ist
+			$STR_source = "";
+			if ($(this).attr('data-infinity-source'))
+			{
+				$STR_source = $(this).attr('data-infinity-source');
+			}
+			else
+			{
+				$STR_source = $(this).closest('figure').find('.inf-figcaption__pic-source').text().trim();
+			}
+
+			// Bildunterschrift aus DOM ziehen, falls kein passendes Attribut vorhanden ist
+			$STR_caption = "";
+			if ($(this).attr('data-infinity-caption'))
+			{
+				$STR_caption = $(this).attr('data-infinity-caption');
+			}
+			else
+			{
+				$element = $(this).closest('figure').find('.inf-figcaption').clone();
+				$STR_caption = $element.children().remove().end().text().trim();
+			}
+
+			// URL zum Bild, Bildunterschrift und -quelle an Overlay übergeben (module/Bep/view/partials/gallery/image/v2.phtml)
+			// Inline Image sollte auch groß aufgemacht werden
+			$("img[data-infinity-id='overlay-image']").attr("src", $(this).attr('data-infinity-image').replace('540x0/smart','1000x0/smart'));
+			$("img[data-infinity-id='overlay-image']").attr("title", $STR_caption);
+			$("img[data-infinity-id='overlay-image']").attr("alt", $STR_caption);
+
+			$("div[data-infinity-id='overlay-image-text']").html(
+				'<div class="inf-figcaption inf-img-overlay__figcaption inf-color-white">' +
+				$STR_caption +
+				'<div class="inf-figcaption__pic-source inf-color-white">' +
+				$STR_source +
+				'</div></div>'
+			);
+
+			$('.inf-img-overlay').addClass("inf-img-overlay--active")
+
+		}
+	}
+);
+
+
+// Schließen des Bild-Overlays
+$('.inf-img-overlay, .inf-img-overlay__close').click(function ()
+	{
+
+		$('.inf-img-overlay').removeClass("inf-img-overlay--active");
+		$("div[data-infinity-id='overlay-image-text']").children().remove();
+
+	}
+);

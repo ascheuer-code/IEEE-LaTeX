@@ -1,0 +1,64 @@
+\documentclass[10pt,conference,a4paper]{IEEEtran}
+\usepackage[utf8]{inputenc} 
+\usepackage{textcomp}
+%%**************************************************
+%% WICHTIG: Je nach Sprache des Textes die 
+%% folgende Zeile anpassen
+\usepackage[ngerman]{babel} % ngerman
+%%**************************************************
+\usepackage{xspace}
+\usepackage[nocompress]{cite}
+\usepackage[bottom]{footmisc}
+\usepackage{booktabs}
+\usepackage[pdftex]{graphicx}
+%\usepackage[caption=false,font=footnotesize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{stfloats}
+\usepackage{url}
+\urlstyle{tt}
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+% paper title
+\title{Docker, Möglichkeiten und Fallstricke der Containerisierung von Legacy Software}
+
+% author names and affiliations
+\author{%
+	\IEEEauthorblockN{Andreas Scheuer}%
+	\IEEEauthorblockA{%
+		htw saar -- Hochschule für Technik und Wirtschaft des Saarlandes \\ %
+		Seminar ``Angewandte Informatik''\\%
+		\ Sommersemester 2022 %
+	}%
+}
+
+% make the title area
+\maketitle
+
+% page style
+\pagestyle{plain}
+
+% make the title area
+\maketitle
+
+% abstract
+\begin{abstract}
+	In dieser Arbeit werden die Problematiken bei der Containerisierung von Legacy - Software erläutert. Hierbei wird aufgezeigt welche Anforderungen an die zu containerisierende Software bestehen, sowie die Restriktionen und Problematiken innerhalb eines Windows Umfeld auftreten.
+\end{abstract}
+
+
+% CONT
+\input{seminar_content}
+
+
+% BIB
+\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+\bibliography{IEEEexample}
+
+% that's all folks
+\end{document}
+
