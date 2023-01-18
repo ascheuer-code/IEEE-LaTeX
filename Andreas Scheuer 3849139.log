@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.15)  16 JAN 2023 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.15)  18 JAN 2023 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -234,19 +234,114 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )) (seminar_content.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 5--10
+\OT1/ptm/m/n/10 mit his-to-risch ge-wach-se-nen An-wen-dun-gen und Alt-las-ten
+ []
+
+
+Underfull \hbox (badness 6125) in paragraph at lines 5--10
+\OT1/ptm/m/n/10 schwer ver[]anderbaren oder nicht verst[]andlichen Co-de.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+\OT1/ptm/m/n/10 um ei-ne Lauf-zeit-um-ge-bung mit-tels Soft-wa-re zu
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 5--10
+\OT1/ptm/m/n/10 vir-tua-li-sie-ren. Hierf[]ur wird oft Do-cker ver-wen-det, ein
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 5--10
+\OT1/ptm/m/n/10 l[]asst sich fol-gen-der-ma-^^Yen er-kl[]aren: Im Ge-gen-satz zu
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 5--10
+\OT1/ptm/m/n/10 f[]ur die Soft-wa-re er-for-der-li-chen Abh[]angigkeiten be-sit-zen
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 5--10
+\OT1/ptm/m/n/10 und nicht den ge-sam-ten Over-head ei-ner Vir-tua-li-sie-rung.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
 <gfx/vm vs container.png, id=1, 511.15968pt x 329.73187pt>
 File: gfx/vm vs container.png Graphic file (type png)
 <use gfx/vm vs container.png>
-Package pdftex.def Info: gfx/vm vs container.png  used on input line 18.
+Package pdftex.def Info: gfx/vm vs container.png  used on input line 12.
 (pdftex.def)             Requested size: 252.0pt x 162.55615pt.
 
+Underfull \hbox (badness 7888) in paragraph at lines 16--17
+\OT1/ptm/m/n/10 und Con-tai-ne-ri-sie-rung, wo-bei die Vir-tua-li-sie-rung ei-ne
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+\OT1/ptm/m/n/10 kom-plet-te In-stanz ei-nes Be-triebs-sys-tems er-for-dert,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+\OT1/ptm/m/n/10 Abh[]angigkeiten und Res-sour-cen f[]ur die spe-zi-fi-sche
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 16--17
+\OT1/ptm/m/n/10 An-wen-dung be-reit-stellt. Dies f[]uhrt zu ei-ner h[]oheren
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+[]\OT1/ptm/m/n/10 Ein wei-te-rer Vor-teil der Con-tai-ne-ri-sie-rung ist die
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\OT1/ptm/m/n/10 M[]oglichkeit, Legacy-Software in ei-nem Con-tai-ner
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 18--19
+\OT1/ptm/m/n/10 aus-zuf[]uhren, oh-ne dass die Not-wen-dig-keit be-steht, die
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
 
 <gfx/Dockerfile.png, id=3, 313.17pt x 82.80937pt>
 File: gfx/Dockerfile.png Graphic file (type png)
 <use gfx/Dockerfile.png>
-Package pdftex.def Info: gfx/Dockerfile.png  used on input line 27.
+Package pdftex.def Info: gfx/Dockerfile.png  used on input line 21.
 (pdftex.def)             Requested size: 252.0pt x 66.63675pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -254,129 +349,226 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [1{C:/Users/scheu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
- <./gfx/vm vs container.png> <./gfx/Dockerfile.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 50.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 50.
+ <./gfx/vm vs container.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
-Underfull \hbox (badness 4792) in paragraph at lines 48--50
-\OT1/ptm/m/n/10 Bei Le-ga-cy Soft-wa-re kann der Sour-ce Co-de
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 40.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
+
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 48--50
-\OT1/ptm/m/n/10 in den un-ter-schied-lichs-ten va-ri-an-ten vor-lie-gen,
+Underfull \hbox (badness 2762) in paragraph at lines 40--41
+[]\OT1/ptm/m/n/10 Der Sour-ce Co-de ist vor-lie-gend und man
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+\OT1/ptm/m/n/10 hat so-gar die M[]oglichkeit, []Anderungen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 41--42
+[]\OT1/ptm/m/n/10 Teilweise oder ganz vor-lie-gend, aber kei-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 45--46
+\OT1/ptm/m/n/10 sind, das zu be-die-nen ist. Der Mehr-auf-wand,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 7540) in paragraph at lines 46--47
+\OT1/ptm/m/n/10 Hierf[]ur m[]ussten dann al-le In-stal-la-ti-ons-schrit-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 47--48
+\OT1/ptm/m/n/10 Je nach Soft-wa-re kann es sein, dass spe-zi-el-le
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 47--48
+\OT1/ptm/m/n/10 in den Con-tai-ner in-te-griert wer-den. Es kann
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+\OT1/ptm/m/n/10 Hardware-Konfigurationen, Mac-Adressen oder
+ []
+
+
+Underfull \hbox (badness 4595) in paragraph at lines 47--48
+[]\OT1/ptm/m/n/10 ahnliches er-stellt wur-den und nur f[]ur die-sen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 49--50
+\OT1/ptm/m/n/10 Oftmals ver-ar-bei-ten Pro-gram-me Da-ten, die auf
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 49--50
+\OT1/ptm/m/n/10 ex-ter-nen Da-ten-tr[]agern ge-spei-chert wer-den. Dies
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 49--50
+\OT1/ptm/m/n/10 ein-fach zug[]anglich oder mi-grier-bar sind. Hier
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 49--50
+\OT1/ptm/m/n/10 ist es wich-tig, si-cher-zu-stel-len, dass die Da-ten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
-[]\OT1/ptm/m/n/10 Er ist vor-lie-gend, man hat so-gar die
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 
-Underfull \hbox (badness 3895) in paragraph at lines 51--52
-[]\OT1/ptm/m/n/10 teilweise oder ganz vor-lie-gend aber kei-ne
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-
-Underfull \hbox (badness 5756) in paragraph at lines 54--55
-\OT1/ptm/m/n/10 Auch hier gibt es ei-ni-ge punk-te die ge-gen
- []
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 54--55
-\OT1/ptm/m/n/10 ei-ne Con-tai-ne-ri-sie-rung spre-chen, ge-ra-de desktop
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-
- []
-
-
-Underfull \hbox (badness 4144) in paragraph at lines 55--56
-\OT1/ptm/m/n/10 in-stal-lie-ren wenn es daf[]ur nur ei-ne gra-fi-sche
- []
-
-
-Underfull \hbox (badness 3291) in paragraph at lines 55--56
-\OT1/ptm/m/n/10 m[]ussten dann al-le In-stal-la-ti-ons-schrit-te h[]andisch
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-
-Underfull \hbox (badness 3354) in paragraph at lines 56--57
-\OT1/ptm/m/n/10 Je nach Soft-wa-re kann es sein das spe-zi-el-le
- []
-
-
+ [2 <./gfx/Dockerfile.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Underfull \hbox (badness 3407) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 Dies ist sehr un-pro-ble-ma-tisch, man kann das
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 Ver-hal-ten der Soft-wa-re nach-voll-zie-hen und ggf.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 58--60
-\OT1/ptm/m/n/10 Hard-wa-re Kon-fi-gu-ra-tio-nen, Mac Adres-sen, oder
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 Hier las-sen sich zwar kei-ne []Anderungen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
-
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 vor-neh-men, aber man kann ent-spre-chend
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
-
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 der Do-ku-men-ta-ti-ons-qua-lit[]at das Ver-hal-ten
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 61--62
-\OT1/ptm/m/n/10 son-dern spei-chern die-se dann auch, das muss
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 nach-voll-zie-hen und sich dar-auf ent-spre-chend
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 61--62
-\OT1/ptm/m/n/10 con-tai-ner in sich ja zu-stands-los sind und bei
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
 
 
-Underfull \hbox (badness 6526) in paragraph at lines 62--63
-\OT1/ptm/m/n/10 pro-ble-me die auf-tre-ten k[]onnen und auf-grund
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 Da we-der Sour-ce-co-de noch Do-ku-men-ta-ti-on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 vor-han-den, gibt es hier lei-der nur zwei
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 M[]oglichkeiten. Den Her-stel-ler zu Ra-te zie-hen
+ []
+
+
+Underfull \hbox (badness 4954) in paragraph at lines 59--62
+\OT1/ptm/m/n/10 En-gi-nee-ring [3] (Ach-tung: kann straf-recht-li-che
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+
+ []
+
+
+Underfull \hbox (badness 8056) in paragraph at lines 62--63
+\OT1/ptm/m/n/10 be-schrie-ben, macht es nat[]urlich we-nig Sinn,
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 62--63
+\OT1/ptm/m/n/10 da im-mer noch Per-so-nal ben[]otigt wird, um
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 62--63
+\OT1/ptm/m/n/10 es zu be-die-nen und der Mehr-auf-wand dies zu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+\OT1/ptm/m/n/10 be-werk-stel-li-gen h[]oher als der Nut-zen w[]are.
  []
 
 
@@ -385,198 +577,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 71--74
-\OT1/ptm/m/n/10 Dies ist sehr un-pro-ble-ma-tisch, man kann das
+Underfull \hbox (badness 3039) in paragraph at lines 63--64
+\OT1/ptm/m/n/10 Auch hier ist es []au^^Yerst pro-ble-ma-tisch, wenn
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 71--74
-\OT1/ptm/m/n/10 Ver-hal-ten der Soft-wa-re nach-voll-zie-hen und ggf
+Underfull \hbox (badness 4217) in paragraph at lines 63--64
+\OT1/ptm/m/n/10 Soft-wa-re []uber ei-ne In-stal-la-ti-ons-rou-ti-ne verf[]ugt,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
-
+Underfull \hbox (badness 7344) in paragraph at lines 63--64
+\OT1/ptm/m/n/10 Li-ne In-ter-face. F[]ur die \OT1/ptm/b/n/10 Win-dows Mi-cro-soft
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 71--74
-\OT1/ptm/m/n/10 Hier las-sen sich kei-ne zwar kei-ne []anderungen
+Underfull \hbox (badness 3482) in paragraph at lines 63--64
+\OT1/ptm/b/n/10 Mi-cro-soft Stan-dard In-stal-ler Command-Line
  []
 
 
-Underfull \hbox (badness 7814) in paragraph at lines 71--74
-\OT1/ptm/m/n/10 vor-neh-men aber man kann ent-spre-chend der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
-\OT1/ptm/m/n/10 Da we-der Sour-ce-co-de nocht Do-ku-men-ta-ti-on
- []
-
-
-Underfull \hbox (badness 5893) in paragraph at lines 71--74
-\OT1/ptm/m/n/10 vor-han-den ist, gibt es hier lei-der nur zwei
- []
-
-
-Underfull \hbox (badness 7944) in paragraph at lines 71--74
-\OT1/ptm/m/n/10 m[]oglichkeiten. Den her-stel-ler zu ra-te zie-hen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 5475) in paragraph at lines 64--65
+\OT1/ptm/m/n/10 da ein Con-tai-ner nicht end-los an-pass-bar ist.
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 64--65
+\OT1/ptm/m/n/10 sinn-voll sein, spe-zi-el-le Hardware-Abh[]angigkeiten
+ []
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 64--65
+\OT1/ptm/m/n/10 er-for-dert je-doch ei-ne gr[]undliche Ana-ly-se und
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 64--65
+\OT1/ptm/m/n/10 kor-rekt funk-tio-niert und die Per-for-man-ce nicht
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+\OT1/ptm/m/n/10 be-ein-tr[]achtigt wird. Ei-ne wei-te-re M[]oglichkeit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 3769) in paragraph at lines 74--75
-\OT1/ptm/m/n/10 Wie schon be-reits im un-ter-punkt \OT1/ptm/b/n/10 Auf-tre-ten-de
- []
-
-
-Underfull \hbox (badness 4242) in paragraph at lines 74--75
-\OT1/ptm/m/n/10 kla-rer auschei-de-punkt f[]ur die con-tai-ne-ri-sie-rung
- []
-
-
-Underfull \hbox (badness 4832) in paragraph at lines 74--75
-\OT1/ptm/m/n/10 da ja im-mern-och per-so-nal ben[]otigt wird um
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 74--75
-\OT1/ptm/m/n/10 es zu be-die-nen und der mehr-auf-wand dies zu
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-[2]
-Underfull \hbox (badness 3919) in paragraph at lines 75--76
-\OT1/ptm/m/n/10 Auch hier ist es []au^^Yerst pro-ble-ma-tisch wenn
+Underfull \hbox (badness 4242) in paragraph at lines 65--66
+\OT1/ptm/m/n/10 Da Con-tai-ner an sich zu-stands-los sind, w[]are
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 75--76
-\OT1/ptm/m/n/10 soft-wa-re []uber ei-ne in-stal-la-ti-ons rou-ti-ne verf[]ugt
+Underfull \hbox (badness 2790) in paragraph at lines 65--66
+\OT1/ptm/m/n/10 es []au^^Yerst un-vor-teil-haft, wenn al-le Da-ten, die
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 75--76
-\OT1/ptm/m/n/10 be-sitzt oft ei-ne m[]oglichkeit der in-stal-la-ti-on via
+Underfull \hbox (badness 1776) in paragraph at lines 65--66
+\OT1/ptm/m/n/10 ver-lo-ren gin-gen. Um die-ses Pro-blem zu l[]osen,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
+Underfull \hbox (badness 6708) in paragraph at lines 65--66
+\OT1/ptm/m/n/10 an Con-tai-ner an-bin-den kann. Die-se Me-tho-de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
+Underfull \hbox (badness 3019) in paragraph at lines 65--66
+\OT1/ptm/m/n/10 der Ver-wen-dung von Con-tai-nern sorgf[]altig die
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 76--77
-\OT1/ptm/m/n/10 die ent-spre-chen-den Con-tai-ner in-te-griert wer-den.
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 76--77
-\OT1/ptm/m/n/10 pro-ble-me auf-tre-ten auf-grund ei-nes ge-son-der-ten
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-
-Underfull \hbox (badness 4595) in paragraph at lines 77--78
-\OT1/ptm/m/n/10 Da Con-tai-ner an sich Zu-stands-los sind w[]are
- []
-
-
-Underfull \hbox (badness 5637) in paragraph at lines 77--78
-\OT1/ptm/m/n/10 es []au^^Yerst un-vor-teil-haft wenn al-le da-ten die
- []
-
-
-Underfull \hbox (badness 2818) in paragraph at lines 77--78
-\OT1/ptm/m/n/10 zu spei-chern sind nach dem neu-start ver-lo-ren
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-
-Underfull \hbox (badness 2495) in paragraph at lines 88--89
+[3] (persona.tex
+Underfull \hbox (badness 2495) in paragraph at lines 76--1
 []\OT1/ptm/m/n/10 Insgesamt zeigt die-se Ar-beit, dass die Con-tai-ne-ri-sie-
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 88--89
+Underfull \hbox (badness 2547) in paragraph at lines 76--1
 \OT1/ptm/m/n/10 schr[]ankungen er-folg-reich durch-gef[]uhrt wer-den kann. Es
  []
 
-(persona.tex [3])) (Andreas Scheuer 3849139.bbl
+)) (Andreas Scheuer 3849139.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 35.
+(Font)              <8> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
+(Font)              <6> on input line 26.
 
-Underfull \hbox (badness 5578) in paragraph at lines 46--50
+Underfull \hbox (badness 5578) in paragraph at lines 37--41
 []\OT1/ptm/m/n/8 Microsoft, ``Mi-cro-soft stan-dard in-stal-ler command-line op-tio-nen,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--50
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 \OT1/ptm/m/n/8 Web-si-te, on-li-ne erh[]altlich un-ter $https : / / learn . microsoft . com / de-[]de /
- []
-
-
-Underfull \hbox (badness 7649) in paragraph at lines 56--60
-[]\OT1/ptm/m/n/8 I. Do-cker, ``Do-cker run re-fe-rence, net-work set-tings,'' Web-si-te,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
-\OT1/ptm/m/n/8 on-li-ne erh[]altlich un-ter $https : / / docs . docker . com / engine / reference / run /
  []
 
 )
@@ -591,19 +718,17 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4
-
-] (Andreas Scheuer 3849139.aux) ) 
+[4] (Andreas Scheuer 3849139.aux) ) 
 Here is how much of TeX's memory you used:
- 3764 strings out of 475385
- 69413 string characters out of 2776906
- 435802 words of memory out of 3000000
- 25099 multiletter control sequences out of 15000+600000
- 502692 words of font info for 84 fonts, out of 8000000 for 9000
+ 3767 strings out of 475385
+ 69446 string characters out of 2776906
+ 434793 words of memory out of 3000000
+ 25103 multiletter control sequences out of 15000+600000
+ 501556 words of font info for 83 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,8n,62p,912b,347s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 55i,8n,62p,1684b,348s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Andreas Scheuer 3849139.pdf" (4 pages, 119643 bytes).
+Output written on "Andreas Scheuer 3849139.pdf" (4 pages, 118754 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
