@@ -287,19 +287,7 @@ INPUT .\seminar_content.tex
 INPUT .\seminar_content.tex
 INPUT seminar_content.tex
 INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmrc7t.tfm
-INPUT .\gfx\vm vs container.png
-INPUT .\gfx\vm vs container.png
-INPUT gfx\vm vs container.png
-INPUT .\gfx\vm vs container.png
 OUTPUT Andreas Scheuer 3849139.pdf
-INPUT .\gfx\vm vs container.png
-INPUT .\gfx\vm vs container.png
-INPUT .\gfx\vm vs container.png
-INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\scheu\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
@@ -315,6 +303,18 @@ INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmrc7t.
 INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT .\gfx\vm vs container.png
+INPUT .\gfx\vm vs container.png
+INPUT gfx\vm vs container.png
+INPUT .\gfx\vm vs container.png
+INPUT .\gfx\vm vs container.png
+INPUT .\gfx\vm vs container.png
+INPUT .\gfx\vm vs container.png
+INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT C:\Users\scheu\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf

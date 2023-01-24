@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.15)  24 JAN 2023 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.15)  24 JAN 2023 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -257,90 +257,90 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count289
- (seminar_content.tex
-<gfx/vm vs container.png, id=1, 511.15968pt x 329.73187pt>
+ (seminar_content.tex [1{C:/Users/scheu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+
+]
+<gfx/vm vs container.png, id=9, 511.15968pt x 329.73187pt>
 File: gfx/vm vs container.png Graphic file (type png)
 <use gfx/vm vs container.png>
-Package pdftex.def Info: gfx/vm vs container.png  used on input line 22.
+Package pdftex.def Info: gfx/vm vs container.png  used on input line 35.
 (pdftex.def)             Requested size: 252.0pt x 162.55615pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
 []\OT1/ptm/m/n/10 Ein wei-te-rer Vor-teil der Con-tai-ne-ri-sie-rung ist die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
 \OT1/ptm/m/n/10 M[]oglichkeit, Legacy-Software in ei-nem Con-tai-ner
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 28--30
+Underfull \hbox (badness 3118) in paragraph at lines 41--43
 \OT1/ptm/m/n/10 aus-zuf[]uhren, oh-ne dass die Not-wen-dig-keit be-steht, die
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 34.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 47.
 (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (8.22202pt too wide) in paragraph at lines 36--37
+Overfull \hbox (8.22202pt too wide) in paragraph at lines 49--50
 [][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (8.22202pt too wide) in paragraph at lines 37--38
+Overfull \hbox (8.22202pt too wide) in paragraph at lines 50--51
 [][][][][][][][][][][][][] 
  []
 
-[1{C:/Users/scheu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-
-
- <./gfx/vm vs container.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+[2 <./gfx/vm vs container.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
  \OT1/ptm/m/it/10 2) : [][] \OT1/ptm/m/n/10 Teil-wei-se oder ganz vor-lie-gend, aber kei-ne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 []\OT1/ptm/m/n/10 Je nach Soft-wa-re kann es sein, dass spe-zi-el-le
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 88--92
+Underfull \hbox (badness 2111) in paragraph at lines 101--105
 \OT1/ptm/m/n/10 ist oft der Fall, wenn die Soft-wa-re ein-ge-kauft wur-de.
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 88--92
+Underfull \hbox (badness 2635) in paragraph at lines 101--105
 \OT1/ptm/m/n/10 be-stimm-te Hardware-Konfigurationen, Mac-Adressen oder
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 88--92
+Underfull \hbox (badness 1694) in paragraph at lines 101--105
 []\OT1/ptm/m/n/10 ahnliches er-stellt wur-den und nur f[]ur die-sen Com-pu-ter
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
 []\OT1/ptm/m/n/10 Hier wer-den die ver-schie-de-nen M[]oglichkeiten der
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 108--110
+Underfull \hbox (badness 6592) in paragraph at lines 121--123
 \OT1/ptm/m/n/10 Verf[]ugbarkeit des Sour-ce Co-des von Legacy-Software
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 108--110
+Underfull \hbox (badness 2856) in paragraph at lines 121--123
 \OT1/ptm/m/n/10 und die da-mit ver-bun-de-nen Her-aus-for-de-run-gen bei der
  []
 
-[3])
-Underfull \hbox (badness 2495) in paragraph at lines 151--57
+[3] [4])
+Underfull \hbox (badness 2495) in paragraph at lines 167--57
 []\OT1/ptm/m/n/10 Insgesamt zeigt die-se Ar-beit, dass die Con-tai-ne-ri-sie-
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 151--57
+Underfull \hbox (badness 2547) in paragraph at lines 167--57
 \OT1/ptm/m/n/10 schr[]ankungen er-folg-reich durch-gef[]uhrt wer-den kann. Es
  []
 
@@ -373,19 +373,21 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (Andreas Scheuer 3849139.aux) ) 
+[5
+
+] (Andreas Scheuer 3849139.aux) ) 
 Here is how much of TeX's memory you used:
  5405 strings out of 475385
  91376 string characters out of 2776906
- 458954 words of memory out of 3000000
+ 459954 words of memory out of 3000000
  26728 multiletter control sequences out of 15000+600000
  503006 words of font info for 85 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,8n,62p,1684b,1291s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Andreas Scheuer 3849139.pdf" (4 pages, 121880 bytes).
+Output written on "Andreas Scheuer 3849139.pdf" (5 pages, 125061 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
+ 42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -17,6 +17,19 @@ Die Erstellung solcher Container erfolgt mittels Images, die read-only Informati
 Diese Schichten können in einer Dockerfile definiert werden, jeder ausgeführte Befehl wird als zusätzliche Schicht dem Image hinzugefügt und es wird ein Hashwert gezogen für den späteren Gebrauch.
 Wenn nun ein Image erstellt wird, schaut Docker zunächst in seinem Build-Cache, ob die benötigten Schichten bereits als Hash vorhanden sind und kann sie so wiederverwenden.
 Weitere Informationen dazu finden sich in der Overview of Docker Build \cite{dockerbuild}.
+\subsection{Docker}
+
+Docker ist eine revolutionäre Container-Technologie, die es ermöglicht, Software-Anwendungen in containerbasierter Form zu virtualisieren. Dieser Ansatz hat in den letzten Jahren die Anwendungsentwicklung stark verändert und beeinflusst sowohl die Entwicklungsprozesse als auch die Software-Architektur. Durch den Einsatz von Docker und damit einhergehenden Technologien wie Kubernetes, ist es möglich, Multi-Container-Anwendungen einfacher zu verwalten und zu skalieren.
+
+Die Kernfunktionalität von Docker besteht darin, Anwendungen in sogenannten Containern auszuführen. Diese Container enthalten die Anwendung inklusive aller Abhängigkeiten und laufen isoliert von ihrer Umgebung. Durch den Einsatz von Containern anstelle von virtuellen Maschinen (VMs) werden Ressourcen gespart und die Anwendungen werden portabler.
+
+Docker hat in den letzten Jahren eine große Entwicklung durchgemacht und wird von führenden Technologieunternehmen wie Cisco, Google, Huawei, IBM, Microsoft und Red Hat unterstützt. Es wird sowohl auf Linux-Systemen als auch auf Windows-Systemen eingesetzt und ermöglicht so die Entwicklung von Anwendungen, die auf unterschiedlichen Betriebssystemen ausgeführt werden können.
+
+Docker setzt sich aus mehreren Software-Komponenten zusammen, die über die Docker-Engine-API kommunizieren. Diese Komponenten umfassen die Docker-Engine, die die Schnittstelle zwischen den Ressourcen des Hosts und den laufenden Containern herstellt, das Docker-Image, welches das Paket der Anwendung und ihrer Abhängigkeiten darstellt, und das Docker-Registry, in dem die Images gespeichert werden.
+
+Insgesamt hat Docker die Art und Weise, wie Anwendungen entwickelt und bereitgest
+
+ellt werden, grundlegend verändert. Es ermöglicht eine einfachere Verwaltung von Multi-Container-Anwendungen und erhöht die Portabilität und Sicherheit der Anwendungen. Durch die Unterstützung durch führende Technologieunternehmen und die Möglichkeit, auf unterschiedlichen Betriebssystemen eingesetzt zu werden, hat sich Docker zu einer der führenden Technologien in der Anwendungsentwicklung entwickelt. Es ist zu erwarten, dass die Entwicklung von Docker und damit einhergehenden Technologien in Zukunft weiter an Dynamik gewinnen wird.
 
 \begin{figure}[h]
 	\includegraphics[width=\columnwidth]{gfx/vm vs container.png} %.5\textwidth
@@ -139,6 +152,9 @@ Eine weitere Möglichkeit besteht darin, eine spezielle Container-Plattform wie 
 \subsection{Speichern von Daten:}
 Da Container an sich zustandslos sind, wäre es äußerst unvorteilhaft, wenn alle Daten, die gespeichert werden müssen, nach einem Neustart verloren gingen.
 Um dieses Problem zu lösen, hat Docker jedoch eine Lösung entwickelt. In der Dokumentation unter \textbf{Manage data in Docker} \cite{dockerrstorage} wird beschrieben, wie man nichtflüchtigen Speicher an Container anbinden kann. Diese Methode ermöglicht es, dass die gespeicherten Daten auch nach einem Neustart des Containers erhalten bleiben. Dieses Problem tritt natürlich nicht bei Containern auf, die nur Daten verarbeiten und dann weitergeben. Hier muss lediglich darauf geachtet werden, dass im Falle eines Absturzes die Arbeit am richtigen Punkt wieder aufgenommen wird. Es gibt mehrere Möglichkeiten um Daten in Containern zu speichern, man kann entweder eine Volume anlegen, welche auf dem Hostsystem liegen und von verschiedenen Containern gemountet werden können, oder man nutzt ein Volume-Management-Plugins, welches es ermöglicht, Datenbanken oder ähnliches in einem eigenen Volume zu speichern. Es ist wichtig vor der Verwendung von Containern sorgfältig die Anforderungen an den Datenspeicher zu prüfen und die passende Lösung für das Projekt zu wählen.
+
+\textbf{Zusammengefasst:}
+In Kapitel IV wurden Lösungsansätze für die Herausforderungen bei der Containerisierung von Legacy-Software behandelt. Es wurden die Aspekte des Source Codes, der Arbeitsweise der Software, der Installation und spezieller Abhängigkeiten genauer untersucht und Lösungsansätze für die möglichen Probleme aufgezeigt. Für den Fall, dass der Source Code nicht verfügbar ist, wurden verschiedene Möglichkeiten wie das Verhalten der Software zu verstehen und den Container anzupassen besprochen, wie z.B. den Hersteller um Rat zu fragen oder Reverse Engineering zu nutzen. Es wurde auch gezeigt, dass es für bestimmte Arten von Software, die noch manuell bedient werden müssen, keinen Sinn macht diese zu containerisieren. Eine Lösung für dieses Problem wäre die Verwendung von Software mit Webfrontend und die Nutzung von Puppeteer zur automatischen Bedienung.
 
 \section{Zusammenfassung und Ausblick}
 
