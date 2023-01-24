@@ -33,6 +33,11 @@ A.~Sundqvist, ``Guidelines to convert legacy applications into docker container
 E.~Eilam, \emph{Reversing: secrets of reverse engineering}.\hskip 1em plus
   0.5em minus 0.4em\relax John Wiley \& Sons, 2011.
 
+\bibitem{Richtlinie}
+Deutschland, ``Richtlinie 91/250/ewg,'' Website, online erhältlich unter
+  \url{https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:31991L0250};
+  abgerufen am \today.
+
 \bibitem{microsoft}
 Microsoft, ``Microsoft standard installer command-line optionen,'' Website,
   online erhältlich unter
