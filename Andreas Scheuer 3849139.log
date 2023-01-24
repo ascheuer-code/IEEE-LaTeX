@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.15)  18 JAN 2023 15:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.15)  24 JAN 2023 13:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -192,510 +192,165 @@ Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip setti
 ) (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count274
+\lst@gtempboxa=\box53
+\lst@token=\toks21
+\lst@length=\count275
+\lst@currlwidth=\dimen181
+\lst@column=\count276
+\lst@pos=\count277
+\lst@lostspace=\dimen182
+\lst@width=\dimen183
+\lst@newlines=\count278
+\lst@lineno=\count279
+\lst@maxwidth=\dimen184
+ (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count280
+\lst@skipnumbers=\count281
+\lst@framebox=\box54
+) (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count274
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count282
+\l__pdf_internal_box=\box55
 ) (Andreas Scheuer 3849139.aux)
 \openout1 = `"Andreas Scheuer 3849139.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 -- Lines per column: 56 (exact).
 (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count275
-\scratchdimen=\dimen181
-\scratchbox=\box54
-\nofMPsegments=\count276
-\nofMParguments=\count277
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count278
-\MPscratchDim=\dimen182
-\MPnumerator=\count279
-\makeMPintoPDFobject=\count280
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count283
+\scratchdimen=\dimen185
+\scratchbox=\box56
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen186
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks23
 ) (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (seminar_content.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--10
-
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 5--10
-\OT1/ptm/m/n/10 mit his-to-risch ge-wach-se-nen An-wen-dun-gen und Alt-las-ten
- []
-
-
-Underfull \hbox (badness 6125) in paragraph at lines 5--10
-\OT1/ptm/m/n/10 schwer ver[]anderbaren oder nicht verst[]andlichen Co-de.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--10
-\OT1/ptm/m/n/10 um ei-ne Lauf-zeit-um-ge-bung mit-tels Soft-wa-re zu
- []
-
-
-Underfull \hbox (badness 4205) in paragraph at lines 5--10
-\OT1/ptm/m/n/10 vir-tua-li-sie-ren. Hierf[]ur wird oft Do-cker ver-wen-det, ein
- []
-
-
-Underfull \hbox (badness 5637) in paragraph at lines 5--10
-\OT1/ptm/m/n/10 l[]asst sich fol-gen-der-ma-^^Yen er-kl[]aren: Im Ge-gen-satz zu
- []
-
-
-Underfull \hbox (badness 2326) in paragraph at lines 5--10
-\OT1/ptm/m/n/10 f[]ur die Soft-wa-re er-for-der-li-chen Abh[]angigkeiten be-sit-zen
- []
-
-
-Underfull \hbox (badness 1584) in paragraph at lines 5--10
-\OT1/ptm/m/n/10 und nicht den ge-sam-ten Over-head ei-ner Vir-tua-li-sie-rung.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--10
-
- []
-
+))
+\c@lstlisting=\count289
+ (seminar_content.tex
 <gfx/vm vs container.png, id=1, 511.15968pt x 329.73187pt>
 File: gfx/vm vs container.png Graphic file (type png)
 <use gfx/vm vs container.png>
-Package pdftex.def Info: gfx/vm vs container.png  used on input line 12.
+Package pdftex.def Info: gfx/vm vs container.png  used on input line 22.
 (pdftex.def)             Requested size: 252.0pt x 162.55615pt.
 
-Underfull \hbox (badness 7888) in paragraph at lines 16--17
-\OT1/ptm/m/n/10 und Con-tai-ne-ri-sie-rung, wo-bei die Vir-tua-li-sie-rung ei-ne
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-\OT1/ptm/m/n/10 kom-plet-te In-stanz ei-nes Be-triebs-sys-tems er-for-dert,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-\OT1/ptm/m/n/10 Abh[]angigkeiten und Res-sour-cen f[]ur die spe-zi-fi-sche
- []
-
-
-Underfull \hbox (badness 7504) in paragraph at lines 16--17
-\OT1/ptm/m/n/10 An-wen-dung be-reit-stellt. Dies f[]uhrt zu ei-ner h[]oheren
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
 []\OT1/ptm/m/n/10 Ein wei-te-rer Vor-teil der Con-tai-ne-ri-sie-rung ist die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
 \OT1/ptm/m/n/10 M[]oglichkeit, Legacy-Software in ei-nem Con-tai-ner
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 18--19
+Underfull \hbox (badness 3118) in paragraph at lines 28--30
 \OT1/ptm/m/n/10 aus-zuf[]uhren, oh-ne dass die Not-wen-dig-keit be-steht, die
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 34.
+(C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Overfull \hbox (8.22202pt too wide) in paragraph at lines 36--37
+[][][][][][][][][][][][][][][] 
  []
 
-<gfx/Dockerfile.png, id=3, 313.17pt x 82.80937pt>
-File: gfx/Dockerfile.png Graphic file (type png)
-<use gfx/Dockerfile.png>
-Package pdftex.def Info: gfx/Dockerfile.png  used on input line 21.
-(pdftex.def)             Requested size: 252.0pt x 66.63675pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (8.22202pt too wide) in paragraph at lines 37--38
+[][][][][][][][][][][][][] 
+ []
 
 [1{C:/Users/scheu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
  <./gfx/vm vs container.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 40.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 40.
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
-
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 40--41
-[]\OT1/ptm/m/n/10 Der Sour-ce Co-de ist vor-lie-gend und man
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-\OT1/ptm/m/n/10 hat so-gar die M[]oglichkeit, []Anderungen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-Underfull \hbox (badness 1983) in paragraph at lines 41--42
-[]\OT1/ptm/m/n/10 Teilweise oder ganz vor-lie-gend, aber kei-ne
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-
- []
-
-
-Underfull \hbox (badness 3449) in paragraph at lines 45--46
-\OT1/ptm/m/n/10 sind, das zu be-die-nen ist. Der Mehr-auf-wand,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
-
-
-Underfull \hbox (badness 7540) in paragraph at lines 46--47
-\OT1/ptm/m/n/10 Hierf[]ur m[]ussten dann al-le In-stal-la-ti-ons-schrit-te
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-
- []
-
-
-Underfull \hbox (badness 1789) in paragraph at lines 47--48
-\OT1/ptm/m/n/10 Je nach Soft-wa-re kann es sein, dass spe-zi-el-le
- []
-
-
-Underfull \hbox (badness 5036) in paragraph at lines 47--48
-\OT1/ptm/m/n/10 in den Con-tai-ner in-te-griert wer-den. Es kann
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-\OT1/ptm/m/n/10 Hardware-Konfigurationen, Mac-Adressen oder
- []
-
-
-Underfull \hbox (badness 4595) in paragraph at lines 47--48
-[]\OT1/ptm/m/n/10 ahnliches er-stellt wur-den und nur f[]ur die-sen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-
-Underfull \hbox (badness 2253) in paragraph at lines 49--50
-\OT1/ptm/m/n/10 Oftmals ver-ar-bei-ten Pro-gram-me Da-ten, die auf
- []
-
-
-Underfull \hbox (badness 2478) in paragraph at lines 49--50
-\OT1/ptm/m/n/10 ex-ter-nen Da-ten-tr[]agern ge-spei-chert wer-den. Dies
- []
-
-
-Underfull \hbox (badness 4229) in paragraph at lines 49--50
-\OT1/ptm/m/n/10 ein-fach zug[]anglich oder mi-grier-bar sind. Hier
- []
-
-
-Underfull \hbox (badness 2772) in paragraph at lines 49--50
-\OT1/ptm/m/n/10 ist es wich-tig, si-cher-zu-stel-len, dass die Da-ten
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./gfx/Dockerfile.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
-Underfull \hbox (badness 3407) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 Dies ist sehr un-pro-ble-ma-tisch, man kann das
- []
-
-
-Underfull \hbox (badness 1383) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 Ver-hal-ten der Soft-wa-re nach-voll-zie-hen und ggf.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 Hier las-sen sich zwar kei-ne []Anderungen
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+ \OT1/ptm/m/it/10 2) : [][] \OT1/ptm/m/n/10 Teil-wei-se oder ganz vor-lie-gend, aber kei-ne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 vor-neh-men, aber man kann ent-spre-chend
+Underfull \hbox (badness 10000) in paragraph at lines 88--92
+[]\OT1/ptm/m/n/10 Je nach Soft-wa-re kann es sein, dass spe-zi-el-le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 der Do-ku-men-ta-ti-ons-qua-lit[]at das Ver-hal-ten
+Underfull \hbox (badness 2111) in paragraph at lines 88--92
+\OT1/ptm/m/n/10 ist oft der Fall, wenn die Soft-wa-re ein-ge-kauft wur-de.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 nach-voll-zie-hen und sich dar-auf ent-spre-chend
+Underfull \hbox (badness 2635) in paragraph at lines 88--92
+\OT1/ptm/m/n/10 be-stimm-te Hardware-Konfigurationen, Mac-Adressen oder
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 Da we-der Sour-ce-co-de noch Do-ku-men-ta-ti-on
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 vor-han-den, gibt es hier lei-der nur zwei
- []
-
-
-Underfull \hbox (badness 3965) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 M[]oglichkeiten. Den Her-stel-ler zu Ra-te zie-hen
- []
-
-
-Underfull \hbox (badness 4954) in paragraph at lines 59--62
-\OT1/ptm/m/n/10 En-gi-nee-ring [3] (Ach-tung: kann straf-recht-li-che
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-
- []
-
-
-Underfull \hbox (badness 8056) in paragraph at lines 62--63
-\OT1/ptm/m/n/10 be-schrie-ben, macht es nat[]urlich we-nig Sinn,
- []
-
-
-Underfull \hbox (badness 6910) in paragraph at lines 62--63
-\OT1/ptm/m/n/10 da im-mer noch Per-so-nal ben[]otigt wird, um
- []
-
-
-Underfull \hbox (badness 1533) in paragraph at lines 62--63
-\OT1/ptm/m/n/10 es zu be-die-nen und der Mehr-auf-wand dies zu
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-\OT1/ptm/m/n/10 be-werk-stel-li-gen h[]oher als der Nut-zen w[]are.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
-
-Underfull \hbox (badness 3039) in paragraph at lines 63--64
-\OT1/ptm/m/n/10 Auch hier ist es []au^^Yerst pro-ble-ma-tisch, wenn
- []
-
-
-Underfull \hbox (badness 4217) in paragraph at lines 63--64
-\OT1/ptm/m/n/10 Soft-wa-re []uber ei-ne In-stal-la-ti-ons-rou-ti-ne verf[]ugt,
- []
-
-
-Underfull \hbox (badness 7344) in paragraph at lines 63--64
-\OT1/ptm/m/n/10 Li-ne In-ter-face. F[]ur die \OT1/ptm/b/n/10 Win-dows Mi-cro-soft
- []
-
-
-Underfull \hbox (badness 3482) in paragraph at lines 63--64
-\OT1/ptm/b/n/10 Mi-cro-soft Stan-dard In-stal-ler Command-Line
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Underfull \hbox (badness 5475) in paragraph at lines 64--65
-\OT1/ptm/m/n/10 da ein Con-tai-ner nicht end-los an-pass-bar ist.
- []
-
-
-Underfull \hbox (badness 1721) in paragraph at lines 64--65
-\OT1/ptm/m/n/10 sinn-voll sein, spe-zi-el-le Hardware-Abh[]angigkeiten
- []
-
-
-Underfull \hbox (badness 4886) in paragraph at lines 64--65
-\OT1/ptm/m/n/10 er-for-dert je-doch ei-ne gr[]undliche Ana-ly-se und
- []
-
-
-Underfull \hbox (badness 2512) in paragraph at lines 64--65
-\OT1/ptm/m/n/10 kor-rekt funk-tio-niert und die Per-for-man-ce nicht
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-\OT1/ptm/m/n/10 be-ein-tr[]achtigt wird. Ei-ne wei-te-re M[]oglichkeit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
-Underfull \hbox (badness 4242) in paragraph at lines 65--66
-\OT1/ptm/m/n/10 Da Con-tai-ner an sich zu-stands-los sind, w[]are
- []
-
-
-Underfull \hbox (badness 2790) in paragraph at lines 65--66
-\OT1/ptm/m/n/10 es []au^^Yerst un-vor-teil-haft, wenn al-le Da-ten, die
- []
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 65--66
-\OT1/ptm/m/n/10 ver-lo-ren gin-gen. Um die-ses Pro-blem zu l[]osen,
- []
-
-
-Underfull \hbox (badness 6708) in paragraph at lines 65--66
-\OT1/ptm/m/n/10 an Con-tai-ner an-bin-den kann. Die-se Me-tho-de
+Underfull \hbox (badness 1694) in paragraph at lines 88--92
+[]\OT1/ptm/m/n/10 ahnliches er-stellt wur-den und nur f[]ur die-sen Com-pu-ter
  []
-
 
-Underfull \hbox (badness 3019) in paragraph at lines 65--66
-\OT1/ptm/m/n/10 der Ver-wen-dung von Con-tai-nern sorgf[]altig die
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
+[]\OT1/ptm/m/n/10 Hier wer-den die ver-schie-de-nen M[]oglichkeiten der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
+Underfull \hbox (badness 6592) in paragraph at lines 108--110
+\OT1/ptm/m/n/10 Verf[]ugbarkeit des Sour-ce Co-des von Legacy-Software
  []
-
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
+Underfull \hbox (badness 2856) in paragraph at lines 108--110
+\OT1/ptm/m/n/10 und die da-mit ver-bun-de-nen Her-aus-for-de-run-gen bei der
  []
 
-[3] (persona.tex
-Underfull \hbox (badness 2495) in paragraph at lines 76--1
+[3])
+Underfull \hbox (badness 2495) in paragraph at lines 151--57
 []\OT1/ptm/m/n/10 Insgesamt zeigt die-se Ar-beit, dass die Con-tai-ne-ri-sie-
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 76--1
+Underfull \hbox (badness 2547) in paragraph at lines 151--57
 \OT1/ptm/m/n/10 schr[]ankungen er-folg-reich durch-gef[]uhrt wer-den kann. Es
  []
 
-)) (Andreas Scheuer 3849139.bbl
+(Andreas Scheuer 3849139.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 26.
 
 Underfull \hbox (badness 5578) in paragraph at lines 37--41
 []\OT1/ptm/m/n/8 Microsoft, ``Mi-cro-soft stan-dard in-stal-ler command-line op-tio-nen,''
@@ -720,17 +375,17 @@ Before submitting the final camera ready copy, remember to:
 
 [4] (Andreas Scheuer 3849139.aux) ) 
 Here is how much of TeX's memory you used:
- 3767 strings out of 475385
- 69446 string characters out of 2776906
- 434793 words of memory out of 3000000
- 25103 multiletter control sequences out of 15000+600000
- 501556 words of font info for 83 fonts, out of 8000000 for 9000
+ 5405 strings out of 475385
+ 91376 string characters out of 2776906
+ 458954 words of memory out of 3000000
+ 26728 multiletter control sequences out of 15000+600000
+ 503006 words of font info for 85 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,8n,62p,1684b,348s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 55i,8n,62p,1684b,1291s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Andreas Scheuer 3849139.pdf" (4 pages, 118754 bytes).
+Output written on "Andreas Scheuer 3849139.pdf" (4 pages, 121880 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

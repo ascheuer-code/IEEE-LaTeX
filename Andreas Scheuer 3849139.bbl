@@ -22,7 +22,7 @@
 \BIBdecl
 
 \bibitem{dockerbuild}
-I.~Docker, ``Overview of docker build,'' Website, online erhältlich unter
+{Docker Inc.}, ``Overview of docker build,'' Website, online erhältlich unter
   \url{https://docs.docker.com/build/}; abgerufen am \today.
 
 \bibitem{sundqvist2020guidelines}
