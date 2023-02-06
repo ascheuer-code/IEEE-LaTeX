@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.15)  6 FEB 2023 12:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.15)  6 FEB 2023 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -269,94 +269,86 @@ Package pdftex.def Info: gfx/vm vs container.png  used on input line 22.
 
 
  <./gfx/vm vs container.png>]
-<gfx/https___docs.docker.com_engine_images_architecture.svg.pdf, id=12, 1886.00606pt x 973.71776pt>
-File: gfx/https___docs.docker.com_engine_images_architecture.svg.pdf Graphic file (type pdf)
-<use gfx/https___docs.docker.com_engine_images_architecture.svg.pdf>
-Package pdftex.def Info: gfx/https___docs.docker.com_engine_images_architecture.svg.pdf  used on input line 39.
-(pdftex.def)             Requested size: 471.50037pt x 243.42885pt.
+<gfx/Docker.png, id=12, 760.34062pt x 405.01312pt>
+File: gfx/Docker.png Graphic file (type png)
+<use gfx/Docker.png>
+Package pdftex.def Info: gfx/Docker.png  used on input line 41.
+(pdftex.def)             Requested size: 250.91318pt x 133.65474pt.
 
-Overfull \hbox (219.50037pt too wide) in paragraph at lines 39--40
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 []\OT1/ptm/m/n/10 Ein wei-te-rer Vor-teil der Con-tai-ne-ri-sie-rung ist die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 \OT1/ptm/m/n/10 M[]oglichkeit, Legacy-Software in ei-nem Con-tai-ner
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 47--49
+Underfull \hbox (badness 3118) in paragraph at lines 46--48
 \OT1/ptm/m/n/10 aus-zuf[]uhren, oh-ne dass die Not-wen-dig-keit be-steht, die
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 53.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 52.
 (C:\Users\scheu\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (8.22202pt too wide) in paragraph at lines 55--56
+Overfull \hbox (8.22202pt too wide) in paragraph at lines 54--55
 [][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (8.22202pt too wide) in paragraph at lines 56--57
+Overfull \hbox (8.22202pt too wide) in paragraph at lines 55--56
 [][][][][][][][][][][][][] 
  []
 
-[2 <./gfx/https___docs.docker.com_engine_images_architecture.svg.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+[2 <./gfx/Docker.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
  \OT1/ptm/m/it/10 2) : [][] \OT1/ptm/m/n/10 Teil-wei-se oder ganz vor-lie-gend, aber kei-ne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--111
+Underfull \hbox (badness 10000) in paragraph at lines 103--107
 []\OT1/ptm/m/n/10 Je nach Soft-wa-re kann es sein, dass spe-zi-el-le
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 107--111
+Underfull \hbox (badness 2111) in paragraph at lines 103--107
 \OT1/ptm/m/n/10 ist oft der Fall, wenn die Soft-wa-re ein-ge-kauft wur-de.
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 107--111
+Underfull \hbox (badness 2635) in paragraph at lines 103--107
 \OT1/ptm/m/n/10 be-stimm-te Hardware-Konfigurationen, Mac-Adressen oder
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 107--111
+Underfull \hbox (badness 1694) in paragraph at lines 103--107
 []\OT1/ptm/m/n/10 ahnliches er-stellt wur-den und nur f[]ur die-sen Com-pu-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--129
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 []\OT1/ptm/m/n/10 Hier wer-den die ver-schie-de-nen M[]oglichkeiten der
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 127--129
+Underfull \hbox (badness 6592) in paragraph at lines 123--125
 \OT1/ptm/m/n/10 Verf[]ugbarkeit des Sour-ce Co-des von Legacy-Software
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 127--129
+Underfull \hbox (badness 2856) in paragraph at lines 123--125
 \OT1/ptm/m/n/10 und die da-mit ver-bun-de-nen Her-aus-for-de-run-gen bei der
  []
 
-[3]
-Underfull \vbox (badness 1107) has occurred while \output is active []
-
- [4])
-Underfull \hbox (badness 2495) in paragraph at lines 173--57
+[3] [4])
+Underfull \hbox (badness 2495) in paragraph at lines 169--57
 []\OT1/ptm/m/n/10 Insgesamt zeigt die-se Ar-beit, dass die Con-tai-ne-ri-sie-
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 173--57
+Underfull \hbox (badness 2547) in paragraph at lines 169--57
 \OT1/ptm/m/n/10 schr[]ankungen er-folg-reich durch-gef[]uhrt wer-den kann. Es
  []
 
@@ -382,16 +374,16 @@ Before submitting the final camera ready copy, remember to:
 [5] (Andreas Scheuer 3849139.aux) ) 
 Here is how much of TeX's memory you used:
  5443 strings out of 475385
- 92661 string characters out of 2776906
+ 92301 string characters out of 2776906
  460217 words of memory out of 3000000
  26761 multiletter control sequences out of 15000+600000
  503006 words of font info for 85 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,8n,62p,1684b,1291s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 55i,8n,62p,1685b,1291s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/scheu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Andreas Scheuer 3849139.pdf" (5 pages, 193746 bytes).
+Output written on "Andreas Scheuer 3849139.pdf" (5 pages, 179157 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

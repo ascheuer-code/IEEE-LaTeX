@@ -23,6 +23,8 @@ Weitere Informationen dazu finden sich in der Overview of Docker Build \cite{doc
 	\caption{Unterschied zwischen Virtualisierung und Container, Quelle: Albin Sundqvist \cite{sundqvist2020guidelines}}
 \end{figure}
 
+Abbildung 1 zeigt den Unterschied zwischen Virtualisierung und Containerisierung, wobei die Virtualisierung eine komplette Instanz eines Betriebssystems erfordert, während die Containerisierung lediglich die notwendigen Abhängigkeiten und Ressourcen für die spezifische Anwendung bereitstellt. Dies führt zu einer höheren Ressourceneffizienz und einer besseren Portabilität.
+
 \subsection{Docker}
 
 Docker ist eine revolutionäre Container-Technologie, die es ermöglicht, Software-Anwendungen in containerbasierter Form zu virtualisieren. Dieser Ansatz hat in den letzten Jahren die Anwendungsentwicklung stark verändert und beeinflusst sowohl die Entwicklungsprozesse als auch die Software-Architektur. Durch den Einsatz von Docker und damit einhergehenden Technologien wie Kubernetes, ist es möglich, Multi-Container-Anwendungen einfacher zu verwalten und zu skalieren.
@@ -36,13 +38,10 @@ Docker setzt sich aus mehreren Software-Komponenten zusammen, die über die Dock
 Insgesamt hat Docker die Art und Weise, wie Anwendungen entwickelt und bereitgestellt werden, grundlegend verändert. Es ermöglicht eine einfachere Verwaltung von Multi-Container-Anwendungen und erhöht die Portabilität und Sicherheit der Anwendungen. Durch die Unterstützung durch führende Technologieunternehmen und die Möglichkeit, auf unterschiedlichen Betriebssystemen eingesetzt zu werden, hat sich Docker zu einer der führenden Technologien in der Anwendungsentwicklung entwickelt. Es ist zu erwarten, dass die Entwicklung von Docker und damit einhergehenden Technologien in Zukunft weiter an Dynamik gewinnen wird. \cite{dockeroverview}
 
 \begin{figure}[htbp]
-	\includegraphics[scale=0.25]{gfx/https___docs.docker.com_engine_images_architecture.svg.pdf}
+	\includegraphics[scale=0.33]{gfx/Docker.png}
 	\caption{Docker Architektur Beispiel}
 \end{figure}
 
-
-
-Abbildung 1 zeigt den Unterschied zwischen Virtualisierung und Containerisierung, wobei die Virtualisierung eine komplette Instanz eines Betriebssystems erfordert, während die Containerisierung lediglich die notwendigen Abhängigkeiten und Ressourcen für die spezifische Anwendung bereitstellt. Dies führt zu einer höheren Ressourceneffizienz und einer besseren Portabilität.
 
 Ein weiterer Vorteil der Containerisierung ist die Möglichkeit, Legacy-Software in einem Container auszuführen, ohne dass die Notwendigkeit besteht, die Anwendung an die aktuelle Umgebung anzupassen.
 Dies ermöglicht es Unternehmen, ältere Anwendungen weiterhin zu nutzen, ohne in die Wartung und Anpassung von Legacy-Code zu investieren.
@@ -60,8 +59,6 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 Obwohl die Containerisierung viele Vorteile bietet, wie die Verbesserung der Portabilität und Skalierbarkeit von Legacy-Software, gibt es auch Nachteile, die berücksichtigt werden müssen. Dazu gehören potenzielle Sicherheitsprobleme und die Notwendigkeit für die Erstellung und Wartung von Images. Es ist daher unerlässlich, die Vor- und Nachteile sorgfältig abzuwägen, bevor man sich für die Containerisierung einer Anwendung entscheidet.
 
-In Bezug auf die Erstellung von Images, schaut Docker beim Erstellen eines Images zunächst in seinem Build-Cache nach, ob die benötigten Schichten bereits als Hash vorhanden sind und kann sie so wiederverwenden.
-
 
 \textbf{Zusammengefasst:}
 In der Informatik gibt es oft den Wunsch, Legacy-Software, also schwer veränderbare oder nicht verständliche Code, in Container zu verpacken, um die Portabilität und Skalierbarkeit zu verbessern.
@@ -71,14 +68,13 @@ Diese Schichten können wiederverwendet werden und es wird ein Hashwert gezogen 
 
 
 \section{Szenario}
-Im folgenden wird ein Szenario beschrieben, in dem Unternehmen Legacy-Software im Einsatz haben und die Problematiken, die sich daraus ergeben, dargestellt werden. Es wird gezeigt wie diese Problematiken mit Hilfe der Containerisierung gelöst werden können.
+Im folgenden Kapitel wird ein Szenario beschrieben, in dem Unternehmen Legacy-Software im Einsatz haben und die Problematiken, die sich daraus ergeben, dargestellt werden. Es wird gezeigt wie diese Problematiken mit Hilfe der Containerisierung gelöst werden können.
 
 \subsection{Problematik}
 Oftmals kann es vorkommen, dass Unternehmen Legacy-Software im Einsatz haben, die mehrere Jahre alt ist und teils nicht mehr gewartet wird oder nicht mehr mit den wachsenden Anforderungen Schritt hält. Diese Legacy-Software kann schnell zu einem Engpass in einem Workflow führen, insbesondere wenn es sich um eine systemkritische Komponente handelt. Das Ersetzen solcher Software kann je nach Umfang nur mit einem hohen Geldaufwand umgesetzt werden. Da die Software weder quelloffen ist noch einfach ausgetauscht werden kann, ist es sinnvoll sie zu containerisieren um sie anschließend zu skalieren. Dies wäre auch mittels virtuellen Maschinen möglich, jedoch ist zu beachten, dass dies einen erhöhten Konfigurationsaufwand hätte. Containerisierung ermöglicht es Unternehmen, ihre Legacy-Software weiterhin zu nutzen, ohne in die Wartung und Anpassung von Legacy-Code zu investieren und bietet die möglichkeit Anwendungen skalieren zu können, um den Anforderungen des Workflow gerecht zu werden.
 
 \textbf{Zusammengefasst:}
-In diesem Szenario geht es um Legacy-Software, die nicht mehr gewartet wird und nicht mehr mit den wachsenden Anforderungen Schritt hält. Diese Legacy-Software kann zu Engpässen in einem Workflow führen.
-Es wird gezeigt, wie diese Problematiken mittels Containerisierung gelöst werden können, ohne in die Wartung und Anpassung von Legacy-Code zu investieren und Anwendungen skalieren zu können, um den Anforderungen des Workflows gerecht zu werden.
+Es wurde das Szenario beschrieben in dem Unternehmen welche mit Legacy-Software arbeiten und die daraus resultierenden Probleme die Legacy-Software mit sich bringen kann versuchen zu lösen mittels Containerisierung.
 \section{Auftretende Probleme}
 
 In diesem Kapitel werden die Herausforderungen bei der Containerisierung von Legacy-Software behandelt. Es werden diverse Probleme, die bei diesem Vorgang auftreten können, vorgestellt. Es werden die Aspekte des Source Codes, der Arbeitsweise der Software, der Installation und spezieller Abhängigkeiten untersucht, die bei der Containerisierung von Legacy-Software zu beachten sind. Es wird darauf eingegangen, welche Schwierigkeiten entstehen können und wie diese zu handhaben sind.
@@ -170,4 +166,4 @@ Containerisierung ist eine Technologie, die dazu verwendet wird, die Virtualisie
 
 In dieser Arbeit wird aufgezeigt, welche Anforderungen an die zu containerisierende Software bestehen und welche Probleme und Einschränkungen innerhalb eines Windows-Umfelds auftreten können. Es wird gezeigt, dass die Containerisierung von Legacy-Software eine Herausforderung darstellt, insbesondere in Bezug auf die Anpassung an die Anforderungen des Host-Systems und die Behandlung von Abhängigkeiten. Es wird auch diskutiert, wie die Erstellung von Images für Container durchgeführt wird und wie die Verwendung von Dockerfiles dazu beitragen kann, den Prozess der Containerisierung zu vereinfachen.
 
-Insgesamt zeigt diese Arbeit, dass die Containerisierung von Legacy-Software eine Herausforderung darstellt, aber durch den Einsatz von Tools wie Docker und durch die Berücksichtigung bestimmter Anforderungen und Einschränkungen erfolgreich durchgeführt werden kann. Es wird empfohlen, die Containerisierung von Legacy-Software sorgfältig zu planen und durchzuführen, um die Vorteile von besserer Portabilität und Skalierbarkeit zu nutzen, ohne dabei die Funktionsfähigkeit der Software zu beeinträchtigen. Weiterhin ist es wichtig, die Anforderungen an die containerisierte Legacy-Software genau zu definieren und sicherzustellen, dass die Containerumgebung alle notwendigen Ressourcen und Abhängigkeiten bereitstellt, damit die Software ordnungsgemäß funktioniert. Es ist auch wichtig, die Sicherheitsaspekte der containerisierten Legacy-Software zu berücksichtigen und sicherzustellen, dass sie auf dem neuesten Stand der Technik sind. Ein weiteren wichtiger Aspekt ist die Handhabung von Daten in Containern, da diese an sich zustandslos sind und alle Daten, die gespeichert werden müssen, nach einem Neustart verloren gehen können. Docker bietet hierfür jedoch Lösungen wie das Anbinden von nicht-flüchtigem Speicher an Container, die in der Dokumentation unter "Manage data in Docker" beschrieben werden. Insgesamt erfordert die Containerisierung von Legacy-Software eine gründliche Planung und Durchführung, um die Vorteile der Portabilität und Skalierbarkeit zu nutzen, ohne die Funktionsfähigkeit der Software zu beeinträchtigen.
+Insgesamt zeigt diese Arbeit, dass die Containerisierung von Legacy-Software eine Herausforderung darstellt, aber durch den Einsatz von Tools wie Docker und durch die Berücksichtigung bestimmter Anforderungen und Einschränkungen erfolgreich durchgeführt werden kann. Es wird empfohlen, die Containerisierung von Legacy-Software sorgfältig zu planen und durchzuführen, um die Vorteile von besserer Portabilität und Skalierbarkeit zu nutzen, ohne dabei die Funktionsfähigkeit der Software zu beeinträchtigen. Weiterhin ist es wichtig, die Anforderungen an die containerisierte Legacy-Software genau zu definieren und sicherzustellen, dass die Containerumgebung alle notwendigen Ressourcen und Abhängigkeiten bereitstellt, damit die Software ordnungsgemäß funktioniert. Es ist auch wichtig, die Sicherheitsaspekte der containerisierten Legacy-Software zu berücksichtigen und sicherzustellen, dass sie auf dem neuesten Stand der Technik sind. Ein weiteren wichtiger Aspekt ist die Handhabung von Daten in Containern, da diese an sich zustandslos sind und alle Daten, die gespeichert werden müssen, nach einem Neustart verloren gehen können. Docker bietet hierfür jedoch Lösungen wie das Anbinden von nicht-flüchtigem Speicher an Container, die in der Dokumentation unter "Manage data in Docker"  beschrieben werden. Insgesamt erfordert die Containerisierung von Legacy-Software eine gründliche Planung und Durchführung, um die Vorteile der Portabilität und Skalierbarkeit zu nutzen, ohne die Funktionsfähigkeit der Software zu beeinträchtigen.
