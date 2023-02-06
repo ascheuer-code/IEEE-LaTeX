@@ -21,6 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{feathers2020effektives}
+M.~C. Feathers, \emph{Effektives Arbeiten mit Legacy Code: Refactoring und
+  Testen bestehender Software}.\hskip 1em plus 0.5em minus 0.4em\relax
+  BoD--Books on Demand, 2020.
+
 \bibitem{dockerbuild}
 {Docker Inc.}, ``Overview of docker build,'' Website, online erhältlich unter
   \url{https://docs.docker.com/build/}; abgerufen am \today.
@@ -28,6 +33,10 @@
 \bibitem{sundqvist2020guidelines}
 A.~Sundqvist, ``Guidelines to convert legacy applications into docker container
   services,'' 2020.
+
+\bibitem{dockeroverview}
+{Docker Inc.}, ``Docker overview,'' Website, online erhältlich unter
+  \url{https://docs.docker.com/get-started/overview/}; abgerufen am \today.
 
 \bibitem{eilam2011reversing}
 E.~Eilam, \emph{Reversing: secrets of reverse engineering}.\hskip 1em plus
@@ -49,7 +58,7 @@ J.~Bergner, ``Silent install hq,'' Website, online erhältlich unter
   \url{https://silentinstallhq.com}; abgerufen am \today.
 
 \bibitem{dockerrstorage}
-I.~Docker, ``Manage data in docker,'' Website, online erhältlich unter
+{Docker, Inc.}, ``Manage data in docker,'' Website, online erhältlich unter
   \url{https://docs.docker.com/storage/}; abgerufen am \today.
 
 \end{thebibliography}

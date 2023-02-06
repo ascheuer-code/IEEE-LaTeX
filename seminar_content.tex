@@ -3,20 +3,26 @@
 \section{Einleitung}
 
 In der Informatik gibt es oft den Wunsch, Legacy-Software zu containerisieren, um die Portabilität und Skalierbarkeit zu verbessern.
-In diesem Kapitel werden die Begriffe Legacy-Software und Containerisierung näher betrachtet.
+In diesem Kapitel werden die Begriffe Legacy-Software, Containerisierung und Docker näher betrachtet.
 \subsection{Legacy - Software:}
 Der Begriff Legacy-Software wird in der Informatik oft eng mit historisch gewachsenen Anwendungen und Altlasten assoziiert.
 Michael C. Feathers definiert Legacy-Code als schwer veränderbaren oder nicht verständlichen Code.
-Dies kann zum Beispiel dann auftreten, wenn man aus Kostengründen Software einkauft, die nicht quelloffen ist und im Laufe der Zeit nicht an die eigenen Anforderungen angepasst wird oder aufgrund von Kosten nicht angepasst werden soll.
+Dies kann zum Beispiel dann auftreten, wenn man aus Kostengründen Software einkauft, die nicht quelloffen ist und im Laufe der Zeit nicht an die eigenen Anforderungen angepasst wird oder aufgrund von Kosten nicht angepasst werden soll. \cite{feathers2020effektives}
 \subsection{Containerisierung:}
 In der Informatik wird die Containerisierung verwendet, um eine Laufzeitumgebung mittels Software zu virtualisieren.
 Hierfür wird oft Docker verwendet, ein Containerisierungswerkzeug, das Container erstellen kann, die alle erforderlichen Abhängigkeiten enthalten, um Software unabhängig auszuführen.
-Die Funktionsweise von Docker lässt sich folgendermaßen erklären: Im Gegensatz zu virtuellen Maschinen, die einen Hypervisor verwenden, um die Befehle der instanziierten Betriebssystems in die des Host-Systems zu übersetzen, laufen Container direkt auf dem Host-System.
+Die Funktionsweise von Container lässt sich folgendermaßen erklären: Im Gegensatz zu virtuellen Maschinen, die einen Hypervisor verwenden, um die Befehle der instanziierten Betriebssystems in die des Host-Systems zu übersetzen, laufen Container direkt auf dem Host-System.
 Ein weiterer Vorteil von Containern ist, dass sie so konfiguriert werden können, dass sie nur die für die Software erforderlichen Abhängigkeiten besitzen und nicht den gesamten Overhead einer Virtualisierung.
 Die Erstellung solcher Container erfolgt mittels Images, die read-only Informationen enthalten, die für die Erstellung eines Containers erforderlich sind. Images werden in Schichten definiert.
 Diese Schichten können in einer Dockerfile definiert werden, jeder ausgeführte Befehl wird als zusätzliche Schicht dem Image hinzugefügt und es wird ein Hashwert gezogen für den späteren Gebrauch.
 Wenn nun ein Image erstellt wird, schaut Docker zunächst in seinem Build-Cache, ob die benötigten Schichten bereits als Hash vorhanden sind und kann sie so wiederverwenden.
 Weitere Informationen dazu finden sich in der Overview of Docker Build \cite{dockerbuild}.
+
+\begin{figure}[h]
+	\includegraphics[width=\columnwidth]{gfx/vm vs container.png} %.5\textwidth
+	\caption{Unterschied zwischen Virtualisierung und Container, Quelle: Albin Sundqvist \cite{sundqvist2020guidelines}}
+\end{figure}
+
 \subsection{Docker}
 
 Docker ist eine revolutionäre Container-Technologie, die es ermöglicht, Software-Anwendungen in containerbasierter Form zu virtualisieren. Dieser Ansatz hat in den letzten Jahren die Anwendungsentwicklung stark verändert und beeinflusst sowohl die Entwicklungsprozesse als auch die Software-Architektur. Durch den Einsatz von Docker und damit einhergehenden Technologien wie Kubernetes, ist es möglich, Multi-Container-Anwendungen einfacher zu verwalten und zu skalieren.
@@ -27,14 +33,14 @@ Docker hat in den letzten Jahren eine große Entwicklung durchgemacht und wird v
 
 Docker setzt sich aus mehreren Software-Komponenten zusammen, die über die Docker-Engine-API kommunizieren. Diese Komponenten umfassen die Docker-Engine, die die Schnittstelle zwischen den Ressourcen des Hosts und den laufenden Containern herstellt, das Docker-Image, welches das Paket der Anwendung und ihrer Abhängigkeiten darstellt, und das Docker-Registry, in dem die Images gespeichert werden.
 
-Insgesamt hat Docker die Art und Weise, wie Anwendungen entwickelt und bereitgest
+Insgesamt hat Docker die Art und Weise, wie Anwendungen entwickelt und bereitgestellt werden, grundlegend verändert. Es ermöglicht eine einfachere Verwaltung von Multi-Container-Anwendungen und erhöht die Portabilität und Sicherheit der Anwendungen. Durch die Unterstützung durch führende Technologieunternehmen und die Möglichkeit, auf unterschiedlichen Betriebssystemen eingesetzt zu werden, hat sich Docker zu einer der führenden Technologien in der Anwendungsentwicklung entwickelt. Es ist zu erwarten, dass die Entwicklung von Docker und damit einhergehenden Technologien in Zukunft weiter an Dynamik gewinnen wird. \cite{dockeroverview}
 
-ellt werden, grundlegend verändert. Es ermöglicht eine einfachere Verwaltung von Multi-Container-Anwendungen und erhöht die Portabilität und Sicherheit der Anwendungen. Durch die Unterstützung durch führende Technologieunternehmen und die Möglichkeit, auf unterschiedlichen Betriebssystemen eingesetzt zu werden, hat sich Docker zu einer der führenden Technologien in der Anwendungsentwicklung entwickelt. Es ist zu erwarten, dass die Entwicklung von Docker und damit einhergehenden Technologien in Zukunft weiter an Dynamik gewinnen wird.
-
-\begin{figure}[h]
-	\includegraphics[width=\columnwidth]{gfx/vm vs container.png} %.5\textwidth
-	\caption{Unterschied zwischen Virtualisierung und Container, Quelle: Albin Sundqvist \cite{sundqvist2020guidelines}}
+\begin{figure}[htbp]
+	\includegraphics[scale=0.25]{gfx/https___docs.docker.com_engine_images_architecture.svg.pdf}
+	\caption{Docker Architektur Beispiel}
 \end{figure}
+
+
 
 Abbildung 1 zeigt den Unterschied zwischen Virtualisierung und Containerisierung, wobei die Virtualisierung eine komplette Instanz eines Betriebssystems erfordert, während die Containerisierung lediglich die notwendigen Abhängigkeiten und Ressourcen für die spezifische Anwendung bereitstellt. Dies führt zu einer höheren Ressourceneffizienz und einer besseren Portabilität.
 
